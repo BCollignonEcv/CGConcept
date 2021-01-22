@@ -1,0 +1,25 @@
+:root{
+    --color-primary-100: rgb(194, 34, 34, 1);
+    --color-primary-80:  rgba(194, 34, 34, .8);
+    --color-primary-60:  rgba(194, 34, 34, .6);
+    --color-secondary-100: rgba(215, 230, 50, 1);
+    --color-secondary-80: rgba(215, 230, 50, .8);
+    --color-secondary-60: rgba(215, 230, 50, .6);
+    --color-neutral-100: rgba(255, 255, 255, 1);
+    --color-neutral-80: rgba(255, 255, 255, .8);
+    --color-neutral-60: rgba(255, 255, 255, .6);
+    --color-neutral-40: rgba(255, 255, 255, .4);
+    --color-neutral-20: rgba(255, 255, 255, .2);
+    --color-neutral-10: rgba(255, 255, 255, .1);
+    --color-dark-100: rgba(0, 0, 0, 1);
+    --color-dark-80: rgba(0, 0, 0, .8);
+    --color-dark-60: rgba(0, 0, 0, .6);
+    --color-dark-40: rgba(0, 0, 0, .4);
+    --color-dark-20: rgba(0, 0, 0, .2);
+    --color-dark-10: rgba(0, 0, 0, .1);
+    --font-primary: ;
+    --font-secondary: ;
+    --margin-small: 1.6rem;
+    --margin-medium: 2rem;
+    --margin-large: 2.6rem;
+}

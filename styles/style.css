@@ -1,0 +1,121 @@
+@import "reset.min.css";
+@import "layer.css";
+@import "component.css";
+
+/*****************************************/
+/**************** TEXT *******************/
+/*****************************************/
+
+h1, h2, h3, h4, h5, li, a, span, p{
+    font-family: var(--font-primary);
+}
+
+a{
+    text-decoration: underline;
+}
+
+/*****************************************/
+/*************** COLOR *******************/
+/*****************************************/
+
+.primary-100{
+    background-color: var(--color-primary-100);
+}
+
+.primary-80{
+    background-color: var(--color-primary-80);
+}
+
+.primary-60{
+    background-color: var(--color-primary-60);
+}
+
+.color_primary-100{
+    color: var(--color-primary-100);
+}
+
+.color_primary-80{
+    color: var(--color-primary-80);
+}
+
+.color_primary-60{
+    color: var(--color-primary-60);
+}
+
+.secondary-100{
+    background-color: var(--color-secondary-100);
+    color: var(--color-primary-100);
+}
+
+.secondary-80{
+    background-color: var(--color-secondary-80);
+    color: var(--color-primary-100);
+}
+
+.secondary-60{
+    background-color: var(--color-secondary-60);
+    color: var(--color-primary-100);
+}
+
+.color_secondary-100{
+    color: var(--color-secondary-100);
+}
+
+.color_secondary-80{
+    color: var(--color-secondary-80);
+}
+
+.color_secondary-60{
+    color: var(--color-secondary-60);
+}
+
+/*****************************************/
+/***************** CUSTOM ****************/
+/*****************************************/
+
+section{
+    border: 1px solid green;
+    /* overflow: hidden; */
+}
+
+footer{
+    background-color: grey;
+}
+
+/*****************************************/
+/************ CUSTOM CLASS ***************/
+/*****************************************/
+
+.l_col{
+    border: 1px solid black;
+}
+
+#section-landingPage .l_col, header .l_col{
+    border: none;
+}
+
+.l_col p, .l_col h2, .l_col h3{
+    padding: 1.2rem ;
+}
+
+/*****************************************/
+/************** CUSTOM ID ****************/
+/*****************************************/
+
+#bg_img-Home-1{
+
+}
+
+.c_img-fullHeightScreen{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+}
+
+.c_img-halfHeightScreen{
+    height: 50vh;
+    width: 100%;
+    background-color: grey;
+
+}
+

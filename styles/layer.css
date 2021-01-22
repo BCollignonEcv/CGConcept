@@ -1,0 +1,171 @@
+/*****************************************/
+/**************** GRID *******************/
+/*****************************************/
+
+.l_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.l_col{
+    width: 100%;
+    height: auto;
+}
+
+.l_col.s3{
+    width: 25%;
+}
+
+.l_col.s6{
+    width: 50%;
+}
+
+.l_col.s9{
+    width: 75%;
+}
+
+.l_col.s12{
+    width: 100%;
+}
+
+@media only screen and (min-width: 601px){
+
+    .l_container-fullHeight{
+        height: 100%;
+    }
+    
+    .l_col.m1{
+        width: calc(100% / 12);
+    }
+
+    .l_col.m2{
+        width: calc(100% / 6);
+    }
+
+    .l_col.m3{
+        width: 25%;
+    }
+
+    .l_col.m4{
+        width: calc(100% / 3);
+    }
+    
+    .l_col.m6{
+        width: 50%;
+    }
+
+    .l_col.m8{
+        width: calc((100% / 3) * 2);
+    }
+    
+    .l_col.m9{
+        width: 75%;
+    }
+
+    .l_col.m10{
+        width: calc((100% / 6) * 5);
+    }
+    
+    .l_col.m12{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 995px){
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+/*****************************************/
+/*************** DISPLAY *****************/
+/*****************************************/
+
+.hideOnSmall{
+    display: none;
+}
+
+.displayOnSmall{
+    display: initial;
+}
+
+@media only screen and (min-width: 601px){
+
+    .hideOnSmall{
+        display: initial;
+    }
+
+    .displayOnSmall{
+        display: none;
+    }
+
+    .hideOnMedium{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 995px){
+
+    .hideOnMedium{
+        display: initial;
+    }
+
+    .displayOnMedium{
+        display: none;
+    }
+
+    .hideOnLarge{
+        display: none;
+    }
+
+
+}
+
+/*****************************************/
+/**************** HEIGHT *****************/
+/*****************************************/
+
+.l_halfHeight{
+    height: 50%;
+}
+
+
+@media only screen and (min-width: 601px){
+
+    .l_sect-100{
+        height: 100vh;
+    }
+
+    .l_sect-90{
+        height: 90vh;
+    }
+    
+    .l_sect-66{
+        height: 66vh;
+    }
+    
+    .l_sect-50{
+        height: 50vh;
+    }
+}
+
+
+.ml-1{
+    margin-left: calc(100% / 12);
+}
+
+.ml-2{
+    margin-left: calc(100% / 6);
+}
+
+.pl-1{
+    padding-left: calc(100% / 12);
+}
+
+.pl-2{
+    padding-left: calc(100% / 6);
+}
