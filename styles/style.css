@@ -6,8 +6,9 @@
 /**************** TEXT *******************/
 /*****************************************/
 
-h1, h2, h3, h4, h5, li, a, span, p{
-    font-family: var(--font-primary);
+h1, h2, h3, h4, h5, li, a, span, p, input, *::placeholder{
+    font: var(--font-primary-medium);
+    margin-block: 0;
 }
 
 a{
@@ -73,29 +74,37 @@ a{
 /***************** CUSTOM ****************/
 /*****************************************/
 
-section{
-    border: 1px solid green;
-    /* overflow: hidden; */
+h1{
+
 }
 
-footer{
-    background-color: grey;
+h5{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: var(--color-white-100);
+    margin-bottom: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: var(--color-dark-v60);
+}
+
+br{
+    font-size: 1.8rem;
 }
 
 /*****************************************/
 /************ CUSTOM CLASS ***************/
 /*****************************************/
 
-.l_col{
+/* .l_col{
     border: 1px solid black;
-}
+} */
 
 #section-landingPage .l_col, header .l_col{
     border: none;
-}
-
-.l_col p, .l_col h2, .l_col h3{
-    padding: 1.2rem ;
 }
 
 /*****************************************/
@@ -116,6 +125,13 @@ footer{
     height: 50vh;
     width: 100%;
     background-color: grey;
-
 }
 
+#map{
+    background-color: var(--color-primary-80);
+}
+
+#map img{
+    width: 80%;
+    margin: 10%;
+}
