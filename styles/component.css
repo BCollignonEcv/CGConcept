@@ -83,6 +83,7 @@ header a{
 }
 
 .c_page-title h2{
+    font-weight: 700;
     font-size: 4rem;
     line-height: 4.4rem;
 }
@@ -92,8 +93,14 @@ header a{
 }
 
 .c_content h4{
+    font-weight: 500;
     margin-bottom: 1.6rem;
     color: var(--color-dark-v20);
+}
+
+.c_content p{
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 995px){
@@ -109,10 +116,6 @@ header a{
 /*****************************************/
 /****************** FORM *****************/
 /*****************************************/
-
-.c_streakContainer{
-
-}
 
 .c_input, .c_input::placeholder{
     width: 100%;
