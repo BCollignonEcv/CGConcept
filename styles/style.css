@@ -27,6 +27,13 @@ h2{
     line-height: var(--line-height-large);
 }
 
+h4{
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+}
+
 h5{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
