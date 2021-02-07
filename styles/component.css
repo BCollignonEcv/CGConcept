@@ -131,19 +131,19 @@ header a{
 }
 
 .c_input-text{
-    padding: .9rem 0;
+    padding: .9rem 0 .7rem 0;
 }
 
 .c_input-textarea{
     min-height: 5ch;
     height: 15ch;
     resize: vertical;
-    padding: .9rem 0;
+    padding: .9rem 0 .7rem 0;
 }
 
 .c_input-submit{
     text-align: left;
-    padding: .9rem 0;
+    padding: .9rem 0 .7rem 0;
 }
 
 .marginEnd{
