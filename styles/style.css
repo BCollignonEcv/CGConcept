@@ -9,6 +9,8 @@
 h1, h2, h3, h4, h5, li, a, span, p, input, textarea, *::placeholder{
     font: var(--font-primary-medium);
     margin-block: 0;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 a{
