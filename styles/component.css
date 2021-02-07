@@ -14,6 +14,7 @@ header{
 header li{
     padding: 1.6rem;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 header a{
