@@ -194,7 +194,7 @@
     padding-left: calc(100vw / 24)
 }
 
-.l_wrapper-parralax{
+.l_wrapper-parallax{
     position: absolute;
     top: 0;
     left: 0;
@@ -204,12 +204,12 @@
     z-index: 2;
 }
 
-.l_wrapper-parralax > .l_container{
+.l_wrapper-parallax > .l_container{
     background-color: white;
     box-shadow: 0 5px 20px var(--color-dark-o40);
 }
 
-.l_wrapper-parralax .l_sect-footer{
+.l_wrapper-parallax .l_sect-footer{
     height: 100vh;
 }
 
@@ -223,7 +223,7 @@
         padding-left: calc(100vw / 12)
     }
 
-    .l_wrapper-parralax .l_sect-footer{
+    .l_wrapper-parallax .l_sect-footer{
         height: 75vh;
     }
 }
