@@ -207,7 +207,7 @@
 .l_wrapper-parallax > .l_container{
     background-color: white;
     /* box-shadow: 0 1px 5px var(--color-dark-o10); */
-    margin-bottom: 100vh;
+    /* margin-bottom: 100vh; */
 }
 
 
@@ -220,7 +220,13 @@
         padding-left: calc(100vw / 16)
     }
 
-    .l_wrapper-parallax > .l_container{
+    /* .l_wrapper-parallax > .l_container{
         margin-bottom: 66vh;
+    } */
+
+    .l_wrapper-parallax-empty{
+        height: 66vh;
+        background-color: transparent;
+        user-select: none;
     }
 }

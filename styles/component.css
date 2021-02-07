@@ -93,6 +93,10 @@ p > a.c_link{
     transition: .3s ease;
 }
 
+.c_text-alignRight.c_link:hover{
+    padding-right: .5rem;
+}
+
 .c_link-inline{
     display: inline-block;
 }
@@ -168,6 +172,10 @@ p > a.c_link{
     color: var(--color-primary-100);
     padding-left: .5rem;
     transition: .3s ease;
+}
+
+.c_input-fake{
+    padding: .9rem 0 .7rem 0;
 }
 
 .marginEnd{
