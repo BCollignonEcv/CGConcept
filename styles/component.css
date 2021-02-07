@@ -155,6 +155,13 @@ a.c_link{
     padding: .9rem 0 .7rem 0;
 }
 
+.c_input-submit:hover{
+    cursor: pointer;
+    color: var(--color-primary-100);
+    padding-left: .5rem;
+    transition: .3s ease;
+}
+
 .marginEnd{
     border-bottom: 1px solid var(--color-dark-v20);
     margin-bottom: 3.6rem;
