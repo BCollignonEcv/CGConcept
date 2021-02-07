@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, li, a, span, p, input, *::placeholder{
 
 a{
     text-decoration: underline;
+    color: var(--color-dark-v60);
 }
 
 /*****************************************/
