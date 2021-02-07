@@ -16,6 +16,23 @@ a{
     color: var(--color-dark-v60);
 }
 
+h1{
+
+}
+
+h5{
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+    color: var(--color-white-100);
+    margin-bottom: 1.8rem;
+}
+
+p{
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+    color: var(--color-dark-v60);
+}
+
 /*****************************************/
 /*************** COLOR *******************/
 /*****************************************/
@@ -75,26 +92,6 @@ a{
 /***************** CUSTOM ****************/
 /*****************************************/
 
-h1{
-
-}
-
-h5{
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    color: var(--color-white-100);
-    margin-bottom: 1.8rem;
-}
-
-p{
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    color: var(--color-dark-v60);
-}
-
-br{
-    font-size: 1.8rem;
-}
 
 /*****************************************/
 /************ CUSTOM CLASS ***************/
@@ -129,7 +126,7 @@ br{
 }
 
 #map{
-    background-color: var(--color-primary-80);
+    background-color: var(--color-dark-v20);
 }
 
 #map img{

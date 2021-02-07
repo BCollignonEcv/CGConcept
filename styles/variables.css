@@ -2,20 +2,6 @@
     --color-primary-100: rgb(0, 188, 112, 1);
     --color-primary-80:  rgba(0, 188, 112, .8);
     --color-primary-60:  rgba(0, 188, 112, .6);
-    /* --color-secondary-100: rgba(215, 230, 50, 1);
-    --color-secondary-80: rgba(215, 230, 50, .8);
-    --color-secondary-60: rgba(215, 230, 50, .6);
-    --color-neutral-100: rgba(130, 130, 130, 1);
-    --color-neutral-o80: rgba(130, 130, 130, .8);
-    --color-neutral-o60: rgba(130, 130, 130, .6);
-    --color-neutral-o40: rgba(130, 130, 130, .4);
-    --color-neutral-o20: rgba(130, 130, 130, .2);
-    --color-neutral-o10: rgba(130, 130, 130, .1);
-    --color-neutral-v80: rgba(130, 130, 130, .8);
-    --color-neutral-v60: rgba(130, 130, 130, .6);
-    --color-neutral-v40: rgba(130, 130, 130, .4);
-    --color-neutral-v20: rgba(130, 130, 130, .2);
-    --color-neutral-v10: rgba(130, 130, 130, .1); */
     --color-dark-100: rgba(0, 0, 0, 1);
     --color-dark-o80: rgba(0, 0, 0, .8);
     --color-dark-o60: rgba(0, 0, 0, .6);
@@ -34,9 +20,13 @@
     --color-white-o20: rgba(255, 255, 255, .2);
     --color-white-o10: rgba(255, 255, 255, .1);
     --margin-small: 1.6rem;
-    --margin-medium: 2rem;
-    --margin-large: 2.6rem;
-    --font-primary-medium: normal normal 500 16px forma-djr-micro, sans-serif;
+    --margin-medium: 2.4rem;
+    --margin-large: 3.6rem;
+    --font-size-small: 1.4rem;
+    --font-size-large: 4rem;
+    --line-height-small: 1.6rem;
+    --line-height-large: 4.4rem;
+    --font-primary-medium: normal normal 500 1.4rem forma-djr-micro, sans-serif;
     --font-primary-bold: normal 700 forma-djr-micro, sans-serif;
 
 }
