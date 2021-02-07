@@ -6,7 +6,7 @@
 /**************** TEXT *******************/
 /*****************************************/
 
-h1, h2, h3, h4, h5, li, a, span, p, input, *::placeholder{
+h1, h2, h3, h4, h5, li, a, span, p, input, textarea, *::placeholder{
     font: var(--font-primary-medium);
     margin-block: 0;
 }
@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5, li, a, span, p, input, *::placeholder{
 a{
     text-decoration: underline;
     color: var(--color-dark-v60);
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small));
 }
 
 h1{
@@ -28,6 +30,7 @@ h2{
 h5{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
+    font-weight: 500;
     color: var(--color-white-100);
     margin-bottom: 1.8rem;
 }

@@ -207,10 +207,7 @@
 .l_wrapper-parallax > .l_container{
     background-color: white;
     box-shadow: 0 5px 20px var(--color-dark-o20);
-}
-
-.l_wrapper-parallax .l_sect-footer{
-    height: 100vh;
+    margin-bottom: 100vh;
 }
 
 
@@ -223,7 +220,7 @@
         padding-left: calc(100vw / 16)
     }
 
-    .l_wrapper-parallax .l_sect-footer{
-        height: 66vh;
+    .l_wrapper-parallax > .l_container{
+        margin-bottom: 66vh;
     }
 }
