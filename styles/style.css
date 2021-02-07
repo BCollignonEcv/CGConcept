@@ -48,6 +48,13 @@ input{
     color: var(--color-dark-v60);
 }
 
+input::placeholder{
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+    font-weight: 700;
+    color: var(--color-dark-v60);
+}
+
 /*****************************************/
 /*************** COLOR *******************/
 /*****************************************/
