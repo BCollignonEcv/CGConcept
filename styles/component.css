@@ -152,6 +152,7 @@ p > a.c_link{
     height: 15ch;
     resize: vertical;
     padding: .9rem 0 .7rem 0;
+    text-transform: none;
 }
 
 .c_input-submit{
