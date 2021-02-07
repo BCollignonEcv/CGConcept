@@ -15,7 +15,7 @@ a{
     text-decoration: underline;
     color: var(--color-dark-v60);
     font-size: var(--font-size-small);
-    line-height: var(--line-height-small));
+    line-height: var(--line-height-small);
 }
 
 h1{
@@ -30,14 +30,14 @@ h2{
 h4{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
-    font-weight: 500;
+    font-weight: var(--font-weight-normal);
     margin-bottom: 1.8rem;
 }
 
 h5{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
-    font-weight: 500;
+    font-weight: var(--font-weight-normal);
     color: var(--color-white-100);
     margin-bottom: 1.8rem;
 }
@@ -51,14 +51,14 @@ p{
 input, textarea{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
 }
 
 input::placeholder, textarea::placeholder{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
 }
 

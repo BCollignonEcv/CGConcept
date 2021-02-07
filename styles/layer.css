@@ -206,7 +206,7 @@
 
 .l_wrapper-parallax > .l_container{
     background-color: white;
-    box-shadow: 0 5px 20px var(--color-dark-o20);
+    /* box-shadow: 0 5px 20px var(--color-dark-o20); */
     margin-bottom: 100vh;
 }
 
