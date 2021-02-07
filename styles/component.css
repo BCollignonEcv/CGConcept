@@ -81,6 +81,10 @@ a.c_link{
     transition: .3s ease;
 }
 
+p > a.c_link{
+    display: inline;
+}
+
 .c_link:hover{
     color: var(--color-primary-100);
     padding-left: .5rem;
