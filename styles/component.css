@@ -136,7 +136,6 @@ a.c_link{
 
 .c_input{
     width: 100%;
-    border-top: 1px solid var(--color-dark-v20);
     color: var(--color-dark-v60);
 }
 
@@ -297,7 +296,11 @@ a.c_link{
 /**************** DIVERS *****************/
 /*****************************************/
 
-.c_container-border{
+.c_streak-horizontal{
     border-left: 1px solid var(--color-dark-v10);
     border-right: 1px solid var(--color-dark-v10);
+}
+
+.c_streak-top{
+    border-top: 1px solid var(--color-dark-v20);
 }
