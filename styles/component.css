@@ -118,7 +118,7 @@ header a{
 /****************** FORM *****************/
 /*****************************************/
 
-.c_input, .c_input::placeholder{
+.c_input, .c_input::placeholder, .c_input-textarea{
     width: 100%;
     text-transform: uppercase;
     color: var(--color-dark-v20);
@@ -131,6 +131,12 @@ header a{
 }
 
 .c_input-text{
+    padding: .9rem 0;
+}
+
+.c_input-textarea{
+    min-height: 5ch;
+    resize: vertical;
     padding: .9rem 0;
 }
 
@@ -269,4 +275,3 @@ header a{
 /*****************************************/
 /**************** DIVERS *****************/
 /*****************************************/
-

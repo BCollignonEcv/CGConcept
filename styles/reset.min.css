@@ -33,7 +33,7 @@ figure{
     margin-inline-end: 0;
 }
 
-input, input:focus, input:checked{
+input, input:focus, input:checked, textarea{
     border:none;
     background-image:none;
     background-color:transparent;
