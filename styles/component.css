@@ -96,8 +96,6 @@ a.c_link{
 
 .c_page-title h2{
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 4.4rem;
 }
 
 .c_content{
@@ -139,6 +137,7 @@ a.c_link{
 .c_input{
     width: 100%;
     border-top: 1px solid var(--color-dark-v20);
+    color: var(--color-dark-v60);
 }
 
 .c_input-text{

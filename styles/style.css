@@ -20,6 +20,11 @@ h1{
 
 }
 
+h2{
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+}
+
 h5{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
@@ -30,6 +35,13 @@ h5{
 p{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
+    color: var(--color-dark-v60);
+}
+
+input{
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+    font-weight: 700;
     color: var(--color-dark-v60);
 }
 

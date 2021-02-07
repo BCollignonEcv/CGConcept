@@ -216,11 +216,11 @@
 
 @media only screen and (min-width: 995px){
     .l_wrapper-content{
-        padding: 0 calc(100vw / 12)
+        padding: 0 calc(100vw / 16)
     }
     
     .l_wrapper-content-left{
-        padding-left: calc(100vw / 12)
+        padding-left: calc(100vw / 16)
     }
 
     .l_wrapper-parallax .l_sect-footer{
