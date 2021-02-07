@@ -12,7 +12,7 @@ header{
 }
 
 header li{
-    padding: 2.8rem;
+    padding: 1.6rem;
     cursor: pointer;
 }
 
@@ -24,6 +24,11 @@ header a{
     header{
         background-color: unset;
     }
+
+    header li{
+        padding: 2.8rem;
+        cursor: pointer;
+    }
 }
 
 /*****************************************/
@@ -33,7 +38,7 @@ header a{
 .c_footer{
     position: relative;
     background-color: var(--color-dark-v40);
-    min-height: 75vh;
+    min-height: 100vh;
     text-transform: uppercase;
 }
 
@@ -43,6 +48,16 @@ header a{
 
 .c_footer p{
     font-weight: 700;
+}
+
+@media only screen and (min-width: 995px){
+    .c_footer{
+        position: relative;
+        background-color: var(--color-dark-v40);
+        min-height: 75vh;
+        text-transform: uppercase;
+        margin-top: 25vh;
+    }
 }
 
 /*****************************************/
@@ -283,3 +298,8 @@ a.c_link{
 /*****************************************/
 /**************** DIVERS *****************/
 /*****************************************/
+
+.c_container-border{
+    border-left: 1px solid var(--color-dark-v10);
+    border-right: 1px solid var(--color-dark-v10);
+}

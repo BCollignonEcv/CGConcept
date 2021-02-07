@@ -194,10 +194,25 @@
     padding-left: calc(100vw / 24)
 }
 
-.l_container-border{
-    border-left: 1px solid var(--color-dark-v10);
-    border-right: 1px solid var(--color-dark-v10);
+.l_wrapper-parralax{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 2;
 }
+
+.l_wrapper-parralax > .l_container{
+    background-color: white;
+    box-shadow: 0 5px 20px var(--color-dark-o40);
+}
+
+.l_wrapper-parralax .l_sect-footer{
+    height: 100vh;
+}
+
 
 @media only screen and (min-width: 995px){
     .l_wrapper-content{
@@ -206,5 +221,9 @@
     
     .l_wrapper-content-left{
         padding-left: calc(100vw / 12)
+    }
+
+    .l_wrapper-parralax .l_sect-footer{
+        height: 75vh;
     }
 }
