@@ -95,6 +95,7 @@ header a{
 .c_content h4{
     font-weight: 500;
     margin-bottom: 1.6rem;
+    text-transform: uppercase;
     color: var(--color-dark-v20);
 }
 
