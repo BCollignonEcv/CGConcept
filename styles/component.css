@@ -41,11 +41,7 @@ header a{
     padding-top: 5.2rem;
 }
 
-.c_footer .c_link{
-    color: var(--color-dark-v60);
-}
-
-.c_footer .c_link, .c_footer p{
+.c_footer p{
     font-weight: 700;
 }
 
@@ -64,8 +60,9 @@ header a{
 .c_link{
     text-decoration: none;
     display: block;
-    color: unset;
-    color: var(--color-primary-100);
+    color: var(--color-dark-v60);
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .c_link:hover{
