@@ -57,7 +57,7 @@ header a{
     text-align:center;
 }
 
-.c_link{
+a.c_link{
     text-decoration: none;
     display: block;
     color: var(--color-dark-v60);
