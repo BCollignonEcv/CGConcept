@@ -103,7 +103,6 @@ a.c_link{
 }
 
 .c_content h4{
-    font-weight: 500;
     margin-bottom: 1.6rem;
     text-transform: uppercase;
     color: var(--color-dark-v20);
@@ -153,6 +152,7 @@ a.c_link{
 .c_input-submit{
     text-align: left;
     padding: .9rem 0 .7rem 0;
+    transition: .3s ease;
 }
 
 .c_input-submit:hover{
