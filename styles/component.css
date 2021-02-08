@@ -38,10 +38,16 @@ header a{
 /*****************************************/
 
 .c_footer{
-    position: relative;
     background-color: var(--color-dark-v40);
     min-height: 100vh;
     text-transform: uppercase;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
+
+.c_footer > *{
+    pointer-events: auto;
 }
 
 .c_footer .l_container ~ .l_container{
@@ -54,11 +60,8 @@ header a{
 
 @media only screen and (min-width: 995px){
     .c_footer{
-        position: relative;
-        background-color: var(--color-dark-v40);
         min-height: 66vh;
         text-transform: uppercase;
-        margin-top: 34vh;
     }
 }
 

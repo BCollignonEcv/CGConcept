@@ -64,6 +64,15 @@ input::placeholder, textarea::placeholder{
     color: var(--color-dark-v60);
 }
 
+section{
+    background-color: white;
+}
+
+main{
+    position: relative;
+    z-index: 2;
+}
+
 
 /*****************************************/
 /*************** COLOR *******************/

@@ -194,23 +194,6 @@
     padding-left: calc(100vw / 24)
 }
 
-.l_wrapper-parallax{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    z-index: 2;
-}
-
-.l_wrapper-parallax > .l_container{
-    background-color: white;
-    /* box-shadow: 0 1px 5px var(--color-dark-o10); */
-    /* margin-bottom: 100vh; */
-}
-
-
 @media only screen and (min-width: 995px){
     .l_wrapper-content{
         padding: 0 calc(100vw / 16)
@@ -218,15 +201,5 @@
     
     .l_wrapper-content-left{
         padding-left: calc(100vw / 16)
-    }
-
-    /* .l_wrapper-parallax > .l_container{
-        margin-bottom: 66vh;
-    } */
-
-    .l_wrapper-parallax-empty{
-        height: 66vh;
-        background-color: transparent;
-        user-select: none;
     }
 }
