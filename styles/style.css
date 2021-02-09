@@ -16,54 +16,46 @@ h1, h2, h3, h4, h5, li, a, span, p, input, textarea, *::placeholder{
 a{
     text-decoration: underline;
     color: var(--color-dark-v60);
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
 }
 
 h1{
-
-}
-
-h2{
-    font-size: var(--font-size-large);
-    line-height: var(--line-height-large);
+    font-size: var(--font-size-headTitle);
+    line-height: var(--line-height-headTitle);
 }
 
 h4{
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     font-weight: var(--font-weight-normal);
-    margin-bottom: 1.8rem;
+    margin-bottom: var(--line-height);
 }
 
 h5{
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     font-weight: var(--font-weight-normal);
     color: var(--color-white-100);
-    margin-bottom: 1.8rem;
+    margin-bottom: var(--line-height);
 }
 
 p{
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     color: var(--color-dark-v60);
 }
 
-br{
-    line-height: var(--line-height-small);
-}
-
 input, textarea{
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
 }
 
 input::placeholder, textarea::placeholder{
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
 }
@@ -75,6 +67,14 @@ section{
 main{
     position: relative;
     z-index: 2;
+}
+
+@media only screen and (min-width: 601px){
+
+}
+
+@media only screen and (min-width: 995px){
+    
 }
 
 

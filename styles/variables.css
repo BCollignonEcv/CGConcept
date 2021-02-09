@@ -22,17 +22,32 @@
     --color-white-o10: rgba(255, 255, 255, .1);
 
     /* MARGIN */
-    --margin-small: 1.6rem;
+    --margin-small: 1.4rem;
     --margin-medium: 2.4rem;
-    --margin-large: 3.6rem;
-    --margin-xlarge: 5.2rem;
+    --margin-large: 3.2rem;
+    --margin-xlarge: 4.8rem;
 
     /* TEXT */
-    --font-size-small: 1.4rem;
-    --line-height-small: 1.6rem;
-    --font-size-large: 4rem;
-    --line-height-large: 4.4rem;
+    --font-size: 1.3rem;
+    --line-height: 1.5rem;
+    --font-size-headTitle: 4rem;
+    --line-height-headTitle: 4.4rem;
     --font-weight-normal: 500;
     --font-weight-bold: 700;
     --font-primary-medium: normal normal 500 1.4rem forma-djr-micro, sans-serif;
+}
+
+@media only screen and (min-width: 995px){
+    :root{
+
+        /* MARGIN */
+        --margin-small: 1.6rem;
+        --margin-medium: 2.8rem;
+        --margin-large: 3.6rem;
+        --margin-xlarge: 5.2rem;
+
+        /* TEXT */
+        --font-size: 1.4rem;
+        --line-height: 1.6rem;
+    }
 }

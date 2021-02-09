@@ -12,7 +12,7 @@ header{
 }
 
 header li{
-    padding: 1.6rem;
+    padding: var(--margin-medium);
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -28,7 +28,7 @@ header a{
     }
 
     header li{
-        padding: 2.8rem;
+        padding: var(--margin-medium);
         cursor: pointer;
     }
 }
@@ -51,20 +51,16 @@ header a{
 }
 
 .c_footer .l_container ~ .l_container{
-    padding-top: var(--margin-medium);
+    padding-top: var(--margin-large);
 }
 
 .c_footer p{
     font-weight: 700;
 }
 
-@media only screen and (min-width: 995px){
+@media only screen and (min-width: 661px){
     .c_footer{
         min-height: 66vh;
-    }
-
-    .c_footer .l_container ~ .l_container{
-        padding-top: var(--margin-xlarge);
     }
 }
 
@@ -73,11 +69,19 @@ header a{
 /*****************************************/
 
 .c_text-alignRight{
-    text-align: right
+    text-align: right;
 }
 
 .c_text-alignMiddle{
-    text-align:center;
+    text-align: center;
+}
+
+.c_text-alignRight-m{
+    text-align: left;
+}
+
+.c_text-alignMiddle-m{
+    text-align: left;
 }
 
 a.c_link{
@@ -116,11 +120,15 @@ p > a.c_link{
 }
 
 .c_content{
-    margin-top: 3.3rem;
+    margin-top: var(--margin-medium);
+}
+
+.c_content-s{
+    margin-top: var(--margin-medium);
 }
 
 .c_content h4{
-    margin-bottom: 1.6rem;
+    margin-bottom: var(--margin-small);
     text-transform: uppercase;
     color: var(--color-dark-v20);
 }
@@ -128,6 +136,20 @@ p > a.c_link{
 .c_content p{
     font-weight: 700;
     text-transform: uppercase;
+}
+
+@media only screen and (min-width: 661px){
+    .c_text-alignRight-m{
+        text-align: right;
+    }
+    
+    .c_text-alignMiddle-m{
+        text-align: center;
+    }
+
+    .c_content-s{
+        margin-top: initial;
+    }
 }
 
 @media only screen and (min-width: 995px){
@@ -186,7 +208,7 @@ p > a.c_link{
 
 .marginEnd{
     border-bottom: 1px solid var(--color-dark-v20);
-    margin-bottom: 3.3rem;
+    margin-bottom: var(--margin-large);
 }
 
 /*****************************************/
@@ -216,10 +238,6 @@ p > a.c_link{
 
 .c_tile .c_tile-content .c_tile-title{
     text-align: center;
-}
-
-.c_tile_img{
-
 }
 
 .c_tile_img-fullHeight{
@@ -327,6 +345,14 @@ p > a.c_link{
 
 .c_streak-top{
     border-top: 1px solid var(--color-dark-v20);
+}
+
+.c_carriage{
+    margin-bottom: var(--line-height);
+}
+
+.c_carriage-2{
+    margin-bottom: calc(var(--line-height) * 2);
 }
 
 @media only screen and (min-width: 995px){
