@@ -51,7 +51,7 @@ header a{
 }
 
 .c_footer .l_container ~ .l_container{
-    padding-top: 5.2rem;
+    padding-top: var(--margin-medium);
 }
 
 .c_footer p{
@@ -61,7 +61,10 @@ header a{
 @media only screen and (min-width: 995px){
     .c_footer{
         min-height: 66vh;
-        text-transform: uppercase;
+    }
+
+    .c_footer .l_container ~ .l_container{
+        padding-top: var(--margin-xlarge);
     }
 }
 
@@ -322,11 +325,13 @@ p > a.c_link{
 /**************** DIVERS *****************/
 /*****************************************/
 
-.c_streak-horizontal{
-    border-left: 1px solid var(--color-dark-v10);
-    border-right: 1px solid var(--color-dark-v10);
-}
-
 .c_streak-top{
     border-top: 1px solid var(--color-dark-v20);
+}
+
+@media only screen and (min-width: 995px){
+    .c_streak-m-horizontal{
+        border-left: 1px solid var(--color-dark-v10);
+        border-right: 1px solid var(--color-dark-v10);
+    }
 }

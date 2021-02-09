@@ -50,6 +50,10 @@ p{
     color: var(--color-dark-v60);
 }
 
+br{
+    line-height: var(--line-height-small);
+}
+
 input, textarea{
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
@@ -133,18 +137,13 @@ main{
 /***************** CUSTOM ****************/
 /*****************************************/
 
+header .l_container li.l_col:last-of-type{
+    padding-left:0;
+}
 
 /*****************************************/
 /************ CUSTOM CLASS ***************/
 /*****************************************/
-
-/* .l_col{
-    border: 1px solid black;
-} */
-
-#section-landingPage .l_col, header .l_col{
-    border: none;
-}
 
 /*****************************************/
 /************** CUSTOM ID ****************/
