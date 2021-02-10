@@ -6,15 +6,18 @@
 /**************** TEXT *******************/
 /*****************************************/
 
-h1, h2, h3, h4, h5, li, a, span, p, input, textarea, *::placeholder{
+h1, h2, h3, h4, h5, li, a, span, p, input, textarea, *::placeholder, figcaption{
     font: var(--font-primary-medium);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    text-transform: uppercase;
     margin-block: 0;
     -moz-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
 }
 
 a{
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--color-dark-v60);
     font-size: var(--font-size);
     line-height: var(--line-height);
@@ -23,41 +26,38 @@ a{
 h1{
     font-size: var(--font-size-headTitle);
     line-height: var(--line-height-headTitle);
+    text-transform: none;
+    margin-left: -2px;
 }
 
 h4{
-    font-size: var(--font-size);
-    line-height: var(--line-height);
     font-weight: var(--font-weight-normal);
     margin-bottom: var(--line-height);
 }
 
 h5{
-    font-size: var(--font-size);
-    line-height: var(--line-height);
     font-weight: var(--font-weight-normal);
     color: var(--color-white-100);
     margin-bottom: var(--line-height);
 }
 
 p{
-    font-size: var(--font-size);
-    line-height: var(--line-height);
+
     color: var(--color-dark-v60);
 }
 
 input, textarea{
-    font-size: var(--font-size);
-    line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
 }
 
 input::placeholder, textarea::placeholder{
-    font-size: var(--font-size);
-    line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
+}
+
+figcaption{
+    font-weight: var(--font-weight-bold);
 }
 
 section{
