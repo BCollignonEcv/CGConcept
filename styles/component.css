@@ -197,6 +197,7 @@ p > a.c_link{
     resize: vertical;
     padding: .9rem 0 .7rem 0;
     text-transform: none;
+    font-weight: var(--font-weight-normal);
 }
 
 .c_input-submit{
