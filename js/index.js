@@ -1,1 +1,0 @@
-document.querySelector('#block_title_configurator_txt > div > div.pwc-controls-parent-wrapkc-elm.kc-css-139257.configurator-txt > div > div:nth-child(2) > h2').style('font-family', 'Gotham Pro Light');
