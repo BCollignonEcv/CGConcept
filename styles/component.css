@@ -8,37 +8,37 @@
     left: 0;
     width: 100vw;
     z-index: 100;
-    background-color: var(--color-neutral-100);
+    color: var(--color-dark-v60);
 }
 
 .c_menu li{
     padding: var(--margin-medium);
+    font-weight: var(--font-weight-bold);
     cursor: pointer;
 }
 
 .c_menu a{
     font-weight: var(--font-weight-bold);
+    color: var(--color-dark-v60);
 }
 
 .c_menu-aside{
-    height: 80vh;
-    margin: 5vh 0;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     top: 0;
     left: 100vw;
-    background-color: var(--color-dark-v40);
+    background-color: white;
     -webkit-transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
     -moz-transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
     -o-transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
     transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
+    box-shadow: 0 0 20px 0px var(--color-dark-v40);
 }
 
 .c_menu-aside.active{
     z-index: 50;
     left: 0vw;
-    height: 100vh;
-    margin: 0;
 }
 
 @media only screen and (min-width: 995px){
@@ -102,7 +102,7 @@ a.c_link{
     display: block;
     color: var(--color-dark-v60);
     font-weight: 700;
-    transition: .3s ease;
+    transition: padding-left .3s ease;
 }
 
 p > a.c_link{
@@ -245,20 +245,16 @@ p > a.c_link{
     height: 20vh;
 }
 
+.c_tile_text{
+    height: 100%;
+    background-color: red;
+}
+
 .c_tile .c_tile-content{
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     width: 100%;
-}
-
-.c_tile-content:hover{
-    background-color: var(--color-primary-100);
-    cursor: pointer;
-}
-
-.c_tile .c_tile-content .c_tile-title{
-    text-align: center;
 }
 
 .c_tile_img-fullHeight{
