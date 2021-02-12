@@ -26,6 +26,7 @@ a{
 h1{
     font-size: var(--font-size-headTitle);
     line-height: var(--line-height-headTitle);
+    font-weight: var(--font-weight-bold);
     text-transform: none;
     margin-left: -2px;
 }
