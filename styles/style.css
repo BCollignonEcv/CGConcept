@@ -67,6 +67,8 @@ section{
 main{
     position: relative;
     z-index: 2;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 @media only screen and (min-width: 601px){
@@ -139,6 +141,19 @@ main{
 
 header .l_container li.l_col:last-of-type{
     padding-left:0;
+}
+
+#gridTester{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+}
+
+#gridTester .l_col{
+    border-left: 1px solid black;
 }
 
 /*****************************************/

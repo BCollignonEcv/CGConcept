@@ -7,6 +7,7 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .l_container-s-reverse{
@@ -52,10 +53,6 @@
 
 .l_col-unsetOnSmall{
     width: auto;
-}
-
-.l_col-fillOnSmall{
-    width: max-content;
 }
 
 @media only screen and (min-width: 601px){
@@ -152,8 +149,46 @@
     }
 }
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1300px){
+    .l_col.xl1{
+        width: calc(100% / 12);
+    }
 
+    .l_col.xl2{
+        width: calc(100% / 6);
+    }
+
+    .l_col.xl3{
+        width: 25%;
+    }
+
+    .l_col.xl4{
+        width: calc(100% / 3);
+    }
+
+    .l_col.xl5{
+        width: calc((100% / 12) * 5);
+    }
+    
+    .l_col.xl6{
+        width: 50%;
+    }
+
+    .l_col.xl8{
+        width: calc((100% / 3) * 2);
+    }
+    
+    .l_col.xl9{
+        width: 75%;
+    }
+
+    .l_col.xl10{
+        width: calc((100% / 6) * 5);
+    }
+    
+    .l_col.xl12{
+        width: 100%;
+    }
 }
 
 /*****************************************/
@@ -232,22 +267,23 @@
     }
 }
 
-
-/* .ml-1{
-    margin-left: calc(100% / 12);
+@media only screen and (min-width: 995px){
+    .l_marginLeft-1{
+        margin-left: calc(100% / 12);
+    }
+    
+    .l_marginLeft-2{
+        margin-left: calc(100% / 6);
+    }
+    
+    .l_paddingLeft-1{
+        padding-left: calc(100% / 12);
+    }
+    
+    .l_paddingLeft-2{
+        padding-left: calc(100% / 6);
+    }
 }
-
-.ml-2{
-    margin-left: calc(100% / 6);
-}
-
-.pl-1{
-    padding-left: calc(100% / 12);
-}
-
-.pl-2{
-    padding-left: calc(100% / 6);
-} */
 
 /*****************************************/
 /*************** POSITION ****************/
@@ -257,15 +293,15 @@
     padding: 0 var(--margin-medium);
 }
 
-.l_wrapper-contentComponent{
-    padding: calc(var(--margin-medium) * 2 + var(--line-height) * 2) var(--margin-medium);
+.l_wrapper-middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 @media only screen and (min-width: 601px){
-
-    .l_wrapper-middle-m.l_wrapper-content{
-        padding-top: 0;
-    }
 
     .l_wrapper-content{
         padding: 0 calc(100vw / 12);
@@ -273,14 +309,6 @@
     
     .l_wrapper-content-left{
         padding-left: calc(100vw / 12);
-    }
-
-    .l_wrapper-middle-m{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
     }
 }
 
@@ -292,4 +320,10 @@
     .l_wrapper-content-left{
         padding-left: calc(100vw / 16);
     }
+}
+
+.l_el-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

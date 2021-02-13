@@ -32,9 +32,19 @@
     --line-height: 1.5rem;
     --font-size-headTitle: 4rem;
     --line-height-headTitle: 4.4rem;
+    --font-size-bigLink: 2.8rem;
+    --line-height-bigLink: 4.4rem;
     --font-weight-normal: 500;
     --font-weight-bold: 700;
     --font-primary-medium: normal normal 500 1.4rem forma-djr-micro, sans-serif;
+}
+
+@media only screen and (min-width: 601px){
+    :root{
+        /* TEXT */
+        --font-size-bigLink: 4rem;
+        --line-height-bigLink: 5.4rem;
+    }
 }
 
 @media only screen and (min-width: 995px){
@@ -49,5 +59,7 @@
         /* TEXT */
         --font-size: 1.4rem;
         --line-height: 1.6rem;
+        --font-size-bigLink: 6rem;
+        --line-height-bigLink: 9rem;
     }
 }

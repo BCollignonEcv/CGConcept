@@ -11,7 +11,7 @@
     color: var(--color-dark-v60);
 }
 
-.c_menu li{
+.c_menu li, .c_menu-bottom li{
     padding: var(--margin-medium);
     font-weight: var(--font-weight-bold);
     cursor: pointer;
@@ -29,17 +29,19 @@
     top: 0;
     left: 100vw;
     background-color: white;
-    -webkit-transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
-    -moz-transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
-    -o-transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
-    transition: left .5s ease-in-out, height .5s ease-in-out, margin .5s ease-in-out;
     box-shadow: 0 0 20px 0px var(--color-dark-v40);
+    z-index: 50;
 }
 
-.c_menu-aside.active{
-    z-index: 50;
-    left: 0vw;
+.c_menu-aside .content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    overflow: hidden;
 }
+
 
 @media only screen and (min-width: 995px){
     .c_menu{
@@ -77,6 +79,12 @@
     }
 }
 
+@media (orientation: landscape) and (max-width: 995px){
+    .c_footer{
+        min-height: 100vh;
+    }
+}
+
 /*****************************************/
 /***************** TEXTE *****************/
 /*****************************************/
@@ -97,7 +105,11 @@
     text-align: left;
 }
 
-a.c_link{
+.c_text-floatRight{
+    float: right;
+}
+
+.c_link{
     text-decoration: none;
     display: block;
     color: var(--color-dark-v60);
@@ -105,7 +117,7 @@ a.c_link{
     transition: padding-left .3s ease;
 }
 
-p > a.c_link{
+p > .c_link{
     display: inline;
 }
 
@@ -121,6 +133,27 @@ p > a.c_link{
 
 .c_link-inline{
     display: inline-block;
+}
+
+.c_link-nav{
+    font-size: var(--font-size-bigLink);
+    line-height: var(--line-height-bigLink);
+    text-transform: none;
+    color: var(--color-dark-v40);
+    border-top: 1px solid var(--color-dark-v10);
+}
+
+.c_link-nav:hover{
+    color: var(--color-primary-100);
+}
+
+.c_link-nav:last-of-type{
+    border-bottom: 1px solid var(--color-dark-v10);
+}
+
+.c_link-nav-empty{
+    margin-bottom: var(--line-height-bigLink);
+    border-bottom: 1px solid var(--color-dark-v10);
 }
 
 .c_page-title{
@@ -346,6 +379,11 @@ p > a.c_link{
 
 .c_streak-top{
     border-top: 1px solid var(--color-dark-v20);
+}
+
+.c_streak{
+    border-top: 1px solid var(--color-dark-v20);
+    border-bottom: 1px solid var(--color-dark-v20);
 }
 
 .c_carriage{
