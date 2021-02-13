@@ -29,6 +29,7 @@ h1{
     font-weight: var(--font-weight-bold);
     text-transform: none;
     margin-left: -2px;
+    color: var(--color-dark-v60);
 }
 
 h4{

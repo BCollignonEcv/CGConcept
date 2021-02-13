@@ -34,18 +34,23 @@
 }
 
 .c_menu-aside .content{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    width: 100%;
-    overflow: hidden;
+    margin-top: calc(var(--margin-medium) * 2 + var(--line-height) * 2);
 }
 
 
 @media only screen and (min-width: 995px){
     .c_menu{
         background-color: unset;
+    }
+
+    .c_menu-aside .content{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
     }
 }
 
