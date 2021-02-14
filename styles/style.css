@@ -23,6 +23,10 @@ a{
     line-height: var(--line-height);
 }
 
+a:visited{
+    color: var(--color-dark-v60);
+}
+
 h1{
     font-size: var(--font-size-headTitle);
     line-height: var(--line-height-headTitle);
