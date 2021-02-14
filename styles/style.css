@@ -56,8 +56,8 @@ h4{
 
 h5{
     font-weight: var(--font-weight-normal);
-    color: var(--color-white-100);
     margin-bottom: var(--line-height);
+    color: white;
 }
 
 p{
@@ -157,7 +157,7 @@ main{
     background-color: var(--color-primary-100);
 }
 
-.bg-primary p, .bg-primary h3{
+.bg-primary p, .bg-primary h3, .bg-primary h5{
     color: white;
     border-color: white;
 }

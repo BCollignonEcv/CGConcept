@@ -75,7 +75,7 @@
 }
 
 .c_footer p{
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
 }
 
 @media only screen and (min-width: 661px){
@@ -230,7 +230,7 @@ p > .c_link{
 }
 
 .c_block-tile{
-    border-left: 1px solid var(--color-black-v40);
+    border-left: 1px solid var(--color-dark-v40);
     margin-left: var(--margin-xsmall-negative);
     padding-left: var(--margin-xsmall);
     /* height: calc(100% - var(--margin-medium) * 2 - var(--line-height)); */
