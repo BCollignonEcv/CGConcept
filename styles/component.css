@@ -120,6 +120,7 @@
     color: var(--color-dark-v60);
     font-weight: 700;
     transition: padding-left .3s ease;
+    cursor: pointer;
 }
 
 p > .c_link{
