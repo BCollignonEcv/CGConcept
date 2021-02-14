@@ -32,6 +32,23 @@ h1{
     color: var(--color-dark-v60);
 }
 
+h2{
+    color: var(--color-primary-100);
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    text-transform: none;
+    margin-bottom: var(--margin-small);
+}
+
+h2{
+    font-weight: var(--font-weight-bold);
+}
+
+h3{
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-v60);
+}
+
 h4{
     font-weight: var(--font-weight-normal);
     margin-bottom: var(--line-height);
@@ -136,6 +153,19 @@ main{
     color: var(--color-secondary-60);
 }
 
+.bg-primary{
+    background-color: var(--color-primary-100);
+}
+
+.bg-primary p, .bg-primary h3{
+    color: white;
+    border-color: white;
+}
+
+.bg-secondary{
+    background-color: var(--color-dark-v10);
+}
+
 /*****************************************/
 /***************** CUSTOM ****************/
 /*****************************************/
@@ -151,6 +181,7 @@ header .l_container li.l_col:last-of-type{
     width: 100vw;
     height: 100vh;
     z-index: 200;
+    display: none;
 }
 
 #gridTester .l_col{

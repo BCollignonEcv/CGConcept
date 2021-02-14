@@ -22,14 +22,22 @@
     --color-white-o10: rgba(255, 255, 255, .1);
 
     /* MARGIN */
+    --margin-xsmall: .8rem;
     --margin-small: 1.4rem;
     --margin-medium: 2.4rem;
     --margin-large: 3.2rem;
     --margin-xlarge: 4.8rem;
 
+    --margin-xsmall-negative: -.8rem;
+
+
     /* TEXT */
     --font-size: 1.3rem;
     --line-height: 1.5rem;
+    --font-size-bigText: 1.6rem;
+    --line-height-bigText: 1.8rem;
+    --font-size-title: 2rem;
+    --line-height-title: 2.2rem;
     --font-size-headTitle: 4rem;
     --line-height-headTitle: 4.4rem;
     --font-size-bigLink: 2.8rem;
@@ -51,14 +59,22 @@
     :root{
 
         /* MARGIN */
+        --margin-xsmall: 1.2rem;
         --margin-small: 1.6rem;
         --margin-medium: 2.8rem;
         --margin-large: 3.6rem;
         --margin-xlarge: 5.2rem;
 
+        --margin-xsmall-negative: -1.2rem;
+
+
         /* TEXT */
         --font-size: 1.4rem;
         --line-height: 1.6rem;
+        --font-size-bigText: 1.8rem;
+        --line-height-bigText: 2rem;
+        --font-size-title: 2.8rem;
+        --line-height-title: 3.2rem;
         --font-size-bigLink: 6rem;
         --line-height-bigLink: 9rem;
     }
