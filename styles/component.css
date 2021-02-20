@@ -233,11 +233,20 @@ p > .c_link{
     border-left: 1px solid var(--color-dark-v40);
     margin-left: var(--margin-xsmall-negative);
     padding-left: var(--margin-xsmall);
-    /* height: calc(100% - var(--margin-medium) * 2 - var(--line-height)); */
+    height: 35vh;
+    position: relative;
 }
 
 .bg-primary .c_block-tile{
     border-left: 1px solid var(--color-dark-v10);
+}
+
+.c_block-tile .c_block-title{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
 }
 
 .c_block-dropdown{
@@ -246,6 +255,12 @@ p > .c_link{
 
 .c_block-dropdown-title{
     color: var(--color-dark-v40);
+    width: 100%;
+}
+
+.c_block-dropdown-title span{
+    text-align: right;
+    float: right;
 }
 
 /*****************************************/
@@ -256,11 +271,25 @@ p > .c_link{
     text-transform: none;
 }
 
-.c_index-title p{
+.c_index-title{
+    margin-bottom: var(--margin-xlarge);
+}
+
+.c_index-title p:before{
+    border-left: 1px solid var(--color-dark-v20);
+    content: " ";
     margin-left: var(--margin-xsmall-negative);
     padding-left: var(--margin-xsmall);
-    border-left: 1px solid var(--color-dark-v20);
 }
+
+.c_index-item{
+    margin-top: var(--margin-xsmall);
+}
+
+.c_index-firstItem{
+    margin-top: var(--margin-medium);
+}
+
 
 /*****************************************/
 /****************** FORM *****************/
