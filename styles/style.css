@@ -182,6 +182,13 @@ header .l_container li.l_col:last-of-type{
     padding-left:0;
 }
 
+#pumptrackterre-img{
+    background-image: url('../img/test.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #gridTester{
     position: fixed;
     top: 0;

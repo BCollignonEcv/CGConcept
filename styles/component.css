@@ -247,8 +247,10 @@ p.c_block-text-secondary{
 }
 
 .c_block-tile .c_block-title{
-    width: 80%;
+    width: 90%;
     margin-top: var(--margin-large);
+    text-align: center;
+    font-weight: var(--font-weight-bold);
 }
 
 
