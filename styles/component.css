@@ -229,11 +229,16 @@ p > .c_link{
     padding-bottom: var(--margin-medium);
 }
 
+p.c_block-text-secondary{
+    color: var(--color-dark-v20);
+}
+
 .c_block-tile{
-    border-left: 1px solid var(--color-dark-v40);
+    border-left: 1px solid var(--color-primary-100);
     margin-left: var(--margin-xsmall-negative);
+    margin-bottom: calc(var(--margin-medium) + var(--line-height));
     padding-left: var(--margin-xsmall);
-    height: 35vh;
+    height: 100%;
     position: relative;
 }
 
@@ -242,17 +247,10 @@ p > .c_link{
 }
 
 .c_block-tile .c_block-title{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    transform: translate(-50%, -50%);
-    
+    width: 80%;
+    margin-top: var(--margin-large);
 }
 
-.c_block-dropdown{
-
-}
 
 .c_block-dropdown-title{
     color: var(--color-dark-v40);
@@ -261,7 +259,6 @@ p > .c_link{
 
 .c_block-dropdown-title span{
     text-align: right;
-    float: right;
 }
 
 /*****************************************/
@@ -274,6 +271,7 @@ p > .c_link{
 
 .c_index-title{
     margin-bottom: var(--margin-xlarge);
+    font-weight: var(--font-weight-normal);
 }
 
 .c_index-title p:before{
@@ -284,11 +282,48 @@ p > .c_link{
 }
 
 .c_index-item{
-    margin-top: var(--margin-xsmall);
+    margin-top: var(--margin-xxsmall);
+    font-weight: var(--font-weight-bold);
 }
 
-.c_index-firstItem{
+.c_index-item .s12{
+    order: 4;
+    color: var(--color-dark-v40);
+    margin-left: calc(100% / 4);
+    margin-top: var(--margin-xxsmall);
+}
+
+.c_slide{
+    cursor: pointer;
+}
+
+.c_slide .c_slide-hidden{
+    display: none;
+}
+
+.c_slide .c_slide-hidden.show{
+    display: block;
+}
+
+.c_index-listItem > .l_col{
     margin-top: var(--margin-medium);
+}
+
+@media only screen and (min-width: 995px){
+    .c_index-item .s12.c_slide-hidden{
+        order: unset;
+        color: var(--color-dark-v60);
+        margin: unset;
+        display: flex;
+    }
+
+    .c_index .c_slide{
+        cursor: unset;
+    }
+
+    .c_index .c_index-listItem .l10 .l2{
+        width: calc(100% / 5);
+    }
 }
 
 
@@ -419,9 +454,13 @@ p > .c_link{
 
 .c_bubble{
     position: relative;
-    height: 84px;
-    width: 84px;
+    height: 74px;
+    width: 74px;
     border-radius: 100%;
+    background-color: var(--color-primary-100);
+}
+
+.bg-primary .c_bubble{
     background-color: white;
 }
 
@@ -431,8 +470,12 @@ p > .c_link{
     left: 50%;
     transform-origin: center;
     transform: translate(-50%, -50%);
+    color: white;
 }
 
+.bg-primary .c_bubble .c_bubble-title{
+    color: var(--color-primary-100);
+}
 
 /*****************************************/
 /***************** IMAGE *****************/

@@ -53,3 +53,27 @@ function animateClosingMenu(){
         $('#menu').text('menu');
     }, 100);
 }
+
+/************ SLIDE ************/ 
+
+$('.c_index .c_slide').click(function(){
+    let item = $(this);
+    if($(window).width() < 995){
+        slide(item);
+    }
+});
+
+$('.c_description .c_slide').click(function(){
+    let item = $(this);
+    slide(item);
+});
+
+function slide(element){
+    element.children('.c_slide-hidden' ).slideToggle( "slow", function() {
+        if(element.children('.c_slide-hidden' ).is(':hidden')){
+            element.find('span.c_text-floatRight').text('+');
+        }else{
+            element.find('span.c_text-floatRight').text('−');
+        }
+    });
+}

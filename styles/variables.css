@@ -12,6 +12,7 @@
 
 
     /* MARGIN */
+    --margin-xxsmall: .4rem;
     --margin-xsmall: .8rem;
     --margin-small: 1.4rem;
     --margin-medium: 2.4rem;
@@ -49,6 +50,7 @@
     :root{
 
         /* MARGIN */
+        --margin-xxsmall: .8rem;
         --margin-xsmall: 1.2rem;
         --margin-small: 1.6rem;
         --margin-medium: 2.8rem;
