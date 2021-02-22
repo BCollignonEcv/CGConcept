@@ -236,7 +236,6 @@ p.c_block-text-secondary{
 .c_block-tile{
     border-left: 1px solid var(--color-primary-100);
     margin-left: var(--margin-xsmall-negative);
-    margin-bottom: calc(var(--margin-medium) + var(--line-height));
     padding-left: var(--margin-xsmall);
     height: 100%;
     position: relative;
@@ -248,7 +247,8 @@ p.c_block-text-secondary{
 
 .c_block-tile .c_block-title{
     width: 90%;
-    margin-top: var(--margin-large);
+    margin-top: var(--margin-xlarge);
+    margin-bottom: calc(var(--margin-xlarge) * 2);
     text-align: center;
     font-weight: var(--font-weight-bold);
 }
@@ -422,6 +422,7 @@ p.c_block-text-secondary{
     height: 100%;
     width: 100%;
     padding: var(--margin-medium);
+    color: var(--color-dark-v60);
 }
 
 .c_tile_img .c_tile_img-overlay:hover{
