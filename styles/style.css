@@ -42,9 +42,6 @@ h2{
     line-height: var(--line-height-title);
     text-transform: none;
     margin-bottom: var(--margin-small);
-}
-
-h2{
     font-weight: var(--font-weight-bold);
 }
 
@@ -168,6 +165,10 @@ span{
 .bg-primary p, .bg-primary h3, .bg-primary h5{
     color: white;
     border-color: white;
+}
+
+.bg-primary h2{
+    color: var(--color-dark-v60);
 }
 
 .bg-secondary{
