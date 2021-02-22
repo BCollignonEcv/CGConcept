@@ -166,6 +166,10 @@ p > .c_link{
     margin-top: 10rem;
 }
 
+.c_page-title.white h1{
+    color: white;
+}
+
 .c_page-title h2{
     font-weight: 700;
 }
@@ -188,7 +192,17 @@ p > .c_link{
 }
 
 .c_content p{
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
+}
+
+.c_content-longText p{
+    text-transform: none;
+    font-size: var(--font-size-bigText);
+    line-height: var(--line-height-bigText);
+}
+
+.c_content-longText p~p{
+    margin-top: var(--line-height);
 }
 
 @media only screen and (min-width: 661px){
