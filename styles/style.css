@@ -211,6 +211,13 @@ header .l_container li.l_col:last-of-type{
     background-position: center;
 }
 
+#chaneyPresentation{
+    background-image: url('../img/chaney-guennet-profil.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #gridTester{
     position: fixed;
     top: 0;

@@ -328,6 +328,17 @@ p.c_block-text-secondary{
     margin-top: var(--margin-xxsmall);
 }
 
+.c_index-big .c_index-item p{
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+    font-weight: var(--font-weight-bold);
+}
+
+.c_index-big .c_index-item:hover p{
+    color: var(--color-primary-100);
+    cursor: pointer;
+}
+
 .c_slide{
     cursor: pointer;
 }
