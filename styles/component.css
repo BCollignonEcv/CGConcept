@@ -267,6 +267,18 @@ p.c_block-text-secondary{
     font-weight: var(--font-weight-bold);
 }
 
+.c_block-tile-hover{
+    height: 50vh;
+}
+
+.c_block-tile-hover:hover{
+    background-color: var(--color-primary-100);
+}
+
+.c_block-tile-hover:hover .c_bubble{
+    background-color: var(--color-dark-v60);
+}
+
 
 .c_block-dropdown-title{
     color: var(--color-dark-v40);
@@ -275,6 +287,13 @@ p.c_block-text-secondary{
 
 .c_block-dropdown-title span{
     text-align: right;
+}
+
+@media only screen and (min-width: 995px){
+
+    .c_block-tile-hover{
+        height: 100vh;
+    }
 }
 
 /*****************************************/
