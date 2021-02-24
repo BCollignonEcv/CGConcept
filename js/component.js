@@ -77,3 +77,8 @@ function slide(element){
         }
     });
 }
+
+$('.c_bestOf-item').hover(function(){
+    console.log($(this));
+    $('.c_bestOf-img').children('img').fadeToggle('slow');
+});
