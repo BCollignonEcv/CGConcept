@@ -245,11 +245,6 @@ header .l_container li.l_col:last-of-type{
 /************ CUSTOM CLASS ***************/
 /*****************************************/
 
-.c_presentation .c_block-tile{
-    margin-left: 0;
-    padding-left: var(--margin-xsmall);
-}
-
 /*****************************************/
 /************** CUSTOM ID ****************/
 /*****************************************/
