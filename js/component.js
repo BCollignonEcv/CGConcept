@@ -78,7 +78,9 @@ function slide(element){
     });
 }
 
+/************ BESTOF ************/ 
+
 $('.c_bestOf-item').hover(function(){
-    console.log($(this));
+    console.log($(this).data('img'));
     $('.c_bestOf-img').children('img').fadeToggle('slow');
 });
