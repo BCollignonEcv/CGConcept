@@ -6,6 +6,10 @@
 /**************** TEXT *******************/
 /*****************************************/
 
+body{
+    background-color: white;
+}
+
 h1, h2, h3, h4, h5, li, a, span, p, input, textarea, *::placeholder, figcaption{
     font: var(--font-primary-medium);
     font-size: var(--font-size);
@@ -183,13 +187,13 @@ span{
     color: white;
 }
 
+.bg-tertiary h3{
+    color: white;
+}
+
 /*****************************************/
 /***************** CUSTOM ****************/
 /*****************************************/
-
-header .l_container li.l_col:last-of-type{
-    padding-left:0;
-}
 
 #pumptrackterre-img{
     background-image: url('../img/pumptrack_terre.jpg');

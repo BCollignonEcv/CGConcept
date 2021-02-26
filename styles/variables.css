@@ -1,14 +1,14 @@
 :root{
     /* COLOR */
-    --color-primary-100: rgb(0, 188, 112, 1);
-    --color-primary-80:  rgba(0, 188, 112, .8);
-    --color-primary-60:  rgba(0, 188, 112, .6);
-    --color-dark-100: rgba(0, 0, 0, 1);
-    --color-dark-v80: rgba(33, 33, 33);
-    --color-dark-v60: rgba(79, 79, 79);
-    --color-dark-v40: rgba(130, 130, 130);
-    --color-dark-v20: rgba(189, 189, 189);
-    --color-dark-v10: rgba(242, 242, 242);
+    --color-primary-100: #00BC70;
+    --color-dark-100: #000000;
+    --color-dark-v80: #212121;
+    --color-dark-v60: #4F4F4F;
+    --color-dark-v40: #828282;
+    --color-dark-v20: #BDBDBD;
+    --color-dark-v10: #F2F2F2;
+
+    --color-dark-o60: rgba(0,0,0,.6);
 
 
     /* MARGIN */

@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.c_menu .l_container li.l_col:last-of-type{
+    padding-left:0;
+}
+
 .c_menu a{
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
@@ -178,6 +182,13 @@ p > .c_link{
     padding-bottom: var(--margin-medium);
 }
 
+.c_sect-title.floating{
+    position: absolute;
+    z-index: 10;
+    top: var(--margin-medium);
+    left: var(--margin-medium);
+}
+
 .c_content{
     margin-top: var(--margin-medium);
 }
@@ -249,7 +260,9 @@ p.c_block-text-secondary{
 
 .c_block-tile{
     border-left: 1px solid var(--color-primary-100);
+    border-right: 1px solid var(--color-primary-100);
     margin-left: var(--margin-xsmall-negative);
+    margin-right: var(--margin-xsmall-negative);
     padding-left: var(--margin-xsmall);
     height: 40vh;
     position: relative;
@@ -260,20 +273,49 @@ p.c_block-text-secondary{
 }
 
 .c_block-tile.last{
+    margin-right: var(--margin-xsmall-negative);
     border-right: 1px solid var(--color-primary-100);
 }
 
 .c_block-tile.c_block-tile-100{
     padding: var(--margin-medium);
     margin-left: 0;
+    margin-right: 0;
+    height: 50vh;
+}
+
+.c_block-tile.c_block-tile-100:hover{
+    background-color: var(--color-dark-o60);
+}
+
+.c_block-tile.c_block-tile-100:hover .c_block-title{
+    color: var(--color-primary-100);
+}
+
+.c_block-tile.c_block-tile-100 .c_block-title{
+    color: white;
+}
+
+.c_block-tile.c_block-tile-100 .c_bubble{
+    margin-top: calc(var(--margin-xlarge));
 }
 
 .bg-primary .c_block-tile{
     border-left: 1px solid var(--color-dark-v10);
+    border-right: 1px solid var(--color-dark-v10);
 }
 
 .bg-primary .c_block-tile.last{
     border-right: 1px solid var(--color-dark-v10);
+}
+
+.bg-secondary .c_block-tile{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.bg-secondary .c_block-tile.last{
+    border-right: 1px solid white;
 }
 
 .c_block-tile .c_block-title{
@@ -287,21 +329,26 @@ p.c_block-text-secondary{
 }
 
 .c_block-tile-hover{
-    height: 100vh;
+    height: 35vh;
     transition: .3s ease;
     margin-left: 0;
-    padding: var(--margin-medium);
+    margin-left: var(--margin-xsmall-negative);
+    padding-left: var(--margin-xsmall);
 }
 
 .c_block-tile-hover:hover{
     background-color: var(--color-primary-100);
 }
 
+.c_block-tile-hover .c_block-title{
+    padding-top: 8vh;
+    text-align: center;
+}
 
 .c_block-dropdown-title{
     color: var(--color-dark-v60);
     width: 100%;
-    border-top: 1px solid var(--color-dark-v60);
+    border-top: 1px solid var(--color-dark-v20);
     font-weight: var(--font-weight-bold);
     padding-top: var(--line-height); 
 }
@@ -315,9 +362,35 @@ h5.c_block-dropdown-title{
     text-align: right;
 }
 
-@media only screen and (min-width: 995px){
+@media only screen and (min-width: 661px){
 
+    .c_block-tile{
+        border-right: none;
+    }
+
+    .c_block-tile.last{
+        margin-right: 0;
+    }
+
+    .bg-primary .c_block-tile{
+        border-right: none;
+    }
+
+    .bg-secondary .c_block-tile{
+        border-right: none;
+    }
+    
     .c_block-tile-hover{
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .c_block-tile-hover .c_bubble{
+        margin: unset;
+    }
+
+    .c_block-tile.c_block-tile-100{
         height: 100vh;
     }
 }
@@ -325,6 +398,10 @@ h5.c_block-dropdown-title{
 /*****************************************/
 /****************** INDEX ****************/
 /*****************************************/
+
+.c_index{
+    padding-bottom: calc(var(--margin-large) * 2);
+}
 
 .c_index p{
     text-transform: none;
@@ -375,6 +452,11 @@ h5.c_block-dropdown-title{
 
 .c_slide .c_slide-hidden.show{
     display: block;
+}
+
+.c_slide.last{
+    border-bottom: 1px solid var(--color-dark-v20);
+    margin-bottom: var(--margin-medium);
 }
 
 .c_index-listItem > .l_col{
@@ -535,6 +617,14 @@ h5.c_block-dropdown-title{
 
 .bg-primary .c_bubble{
     background-color: white;
+}
+
+.bg-secondary .c_bubble{
+    background-color: white;
+}
+
+.bg-secondary .c_bubble span{
+    color: var(--color-dark-v10);
 }
 
 .c_bubble .c_bubble-title{

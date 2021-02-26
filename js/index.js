@@ -3,3 +3,10 @@ $(window).on('keypress',function(e) {
         $('#gridTester').toggleClass('show');
     }
 });
+
+$('*[data-scroll]').on('click',function(){
+    let element = $(`.${$(this).data('scroll')}`);
+    $([document.documentElement, document.body]).animate({
+        scrollTop: element.offset().top
+    }, 500);
+})
