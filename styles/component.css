@@ -421,6 +421,9 @@ h5.c_block-dropdown-title{
 
 .c_index-item{
     margin-top: var(--margin-xxsmall);
+}
+
+.c_index-item p, .c_index-item span{
     font-weight: var(--font-weight-bold);
 }
 
