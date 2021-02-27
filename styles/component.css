@@ -458,12 +458,12 @@ h5.c_block-dropdown-title{
     display: none;
 }
 
-.c_slide > .c_slide-hidden:first-of-type{
-    padding-top: 5vh;
-}
-
 .c_index-item.c_slide .c_slide-hidden, .c_index-item.c_slide .c_slide-hidden span{
     font-weight: var(--font-weight-normal);
+}
+
+.c_slide p.c_slide-hidden:first-of-type{
+    margin-top: 5vh;
 }
 
 .c_slide .c_slide-hidden.show{

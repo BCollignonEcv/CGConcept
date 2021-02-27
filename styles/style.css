@@ -49,9 +49,21 @@ h2{
     font-weight: var(--font-weight-bold);
 }
 
+.c_presentation h2{
+    color: var(--color-dark-v60);
+}
+
+.c_palmares h3{
+    color: white;
+}
+
 h3{
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v60);
+}
+
+.c_palmares h3{
+    color: white;
 }
 
 h4{
@@ -175,6 +187,14 @@ span{
     color: var(--color-dark-v60);
 }
 
+.bg-primary h3{
+    color: var(--color-dark-v10);
+}
+
+.bg-primary h5{
+    color: var(--color-dark-v60);
+}
+
 .bg-secondary{
     background-color: var(--color-dark-v10);
 }
@@ -248,6 +268,27 @@ span{
 /*****************************************/
 /************ CUSTOM CLASS ***************/
 /*****************************************/
+
+.marker {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: var(--color-primary-100);
+}
+
+.marker:hover {
+    width: 17px;
+    height: 17px;
+}
+
+.mapboxgl-popup {
+    width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+}
 
 /*****************************************/
 /************** CUSTOM ID ****************/

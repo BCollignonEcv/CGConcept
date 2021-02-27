@@ -11,6 +11,8 @@ Code : Collignon Baptiste - https://www.collignonbaptiste.com/
     <link rel="stylesheet" href="https://use.typekit.net/uqy7gnm.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <title>CGConcept - Contact</title>
 
     <meta property="og:url" content="" />
@@ -142,10 +144,54 @@ Code : Collignon Baptiste - https://www.collignonbaptiste.com/
                 </div>
             </div>
             <div class="l_col s0 m0 l6" id="map">
-                <figure>
-                    <img src="img/CGCONCEPT-works.png" alt="" srcset="">
-                    <figcaption></figcaption>
-                </figure>
+                <div id='map'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiYmFiYWdyZW5vIiwiYSI6ImNrbG5uODkydTA1bHQycGthNW01ZW8wMzcifQ.-wUSa92i2Kz5q_RnpaQVeQ';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/dark-v10',
+                        center: [2.213749, 46.227638],
+                        zoom: 5
+                    });
+
+                    var geojson = {
+                        type: 'FeatureCollection',
+                        features: [{
+                            type: 'Feature',
+                            geometry: {
+                            type: 'Point',
+                            coordinates: [0.999150, 47.208300]
+                            },
+                            properties: {
+                            title: 'Chedigny',
+                            description: 'Pumptrack Terre'
+                            }
+                        },
+                        {
+                            type: 'Feature',
+                            geometry: {
+                            type: 'Point',
+                            coordinates: [2.416300, 47.203350]
+                            },
+                            properties: {
+                            title: 'St Martin d\'Auxigny',
+                            description: 'Pumptrack Terre'
+                            }
+                        }]
+                    };
+
+                    geojson.features.forEach(function(marker) {
+                        // create a HTML element for each feature
+                        var el = document.createElement('div');
+                        el.className = 'marker';
+
+                        new mapboxgl.Marker(el)
+                        .setLngLat(marker.geometry.coordinates)
+                        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                            .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+                        .addTo(map);
+                    });
+                </script>
             </div>
         </section>
     </main>
