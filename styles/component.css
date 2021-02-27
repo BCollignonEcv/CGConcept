@@ -456,6 +456,9 @@ h5.c_block-dropdown-title{
 
 .c_slide .c_slide-hidden{
     display: none;
+}
+
+.c_description .c_slide .c_slide-hidden{
     padding-bottom: var(--line-height);
 }
 
@@ -463,9 +466,9 @@ h5.c_block-dropdown-title{
     font-weight: var(--font-weight-normal);
 }
 
-/* .c_slide p.c_slide-hidden:first-of-type{
+.c_index-item .c_slide p.c_slide-hidden:first-of-type{
     margin-top: 5vh;
-} */
+}
 
 .c_slide .c_slide-hidden.show{
     display: block;
