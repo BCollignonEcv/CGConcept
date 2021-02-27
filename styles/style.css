@@ -288,6 +288,17 @@ span{
 
 .mapboxgl-popup-content {
     text-align: center;
+    padding: 10px;
+}
+
+.mapboxgl-popup-content h3{
+    color: var(--color-primary-100);
+}
+
+.mapboxgl-popup-content img{
+    margin-top: 10px;
+    width: 180px;
+    border-radius: 3px;
 }
 
 /*****************************************/
@@ -308,13 +319,4 @@ span{
     height: 50vh;
     width: 100%;
     background-color: grey;
-}
-
-#map{
-    background-color: var(--color-dark-v20);
-}
-
-#map img{
-    width: 80%;
-    margin: 10%;
 }
