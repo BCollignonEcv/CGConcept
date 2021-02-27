@@ -456,15 +456,16 @@ h5.c_block-dropdown-title{
 
 .c_slide .c_slide-hidden{
     display: none;
+    padding-bottom: var(--line-height);
 }
 
 .c_index-item.c_slide .c_slide-hidden, .c_index-item.c_slide .c_slide-hidden span{
     font-weight: var(--font-weight-normal);
 }
 
-.c_slide p.c_slide-hidden:first-of-type{
+/* .c_slide p.c_slide-hidden:first-of-type{
     margin-top: 5vh;
-}
+} */
 
 .c_slide .c_slide-hidden.show{
     display: block;

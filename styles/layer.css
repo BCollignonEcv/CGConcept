@@ -338,6 +338,14 @@
     width: 100%;
 }
 
+.l_wrapper-middle.vertical{
+    position: absolute;
+    top: 50%;
+    left: unset;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
 @media only screen and (min-width: 601px){
 
     .l_wrapper-content{
