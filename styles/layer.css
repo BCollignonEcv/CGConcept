@@ -14,7 +14,7 @@
     height: 100%;
 }
 
-.l_container-s-reverse{
+.l_container.reverse{
     flex-direction: column-reverse;
 }
 
@@ -113,7 +113,7 @@
 
 @media only screen and (min-width: 995px){
 
-    .l_container-s-reverse{
+    .l_container.reverse{
         flex-direction: row;
     }
     

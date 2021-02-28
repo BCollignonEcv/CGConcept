@@ -466,6 +466,13 @@ h5.c_block-dropdown-title{
     margin-top: var(--margin-xxsmall);
 }
 
+.c_palmares .c_index-item .s12{
+    order: unset;
+    margin-left: unset;
+    margin-bottom: var(--line-height);
+    margin-top: var(--margin-xxsmall);
+}
+
 .c_index-big .c_index-item p{
     font-size: var(--font-size-title);
     line-height: var(--line-height-title);

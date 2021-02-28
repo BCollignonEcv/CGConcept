@@ -32,7 +32,6 @@ $(window).scroll(function (event) {
 
     $('section').each(function(){
         if(pos > ($(this).offset().top - $(window).height() * 0.9)){
-            console.log($(this), 'show');
             $(this).children().fadeIn('slow');
         }
     })
