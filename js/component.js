@@ -13,9 +13,9 @@ function animateOpeningMenu(){
     var menu = $('.c_menu-aside');
 
     // Animate body to the left
-    body.animate({
-        marginLeft: '-50vw'
-    }, 400);
+    // body.animate({
+    //     marginLeft: '-50vw'
+    // }, 400);
 
     // Animate menu to the left
     menu.animate({
@@ -28,7 +28,7 @@ function animateOpeningMenu(){
     });
 
     setTimeout(function() {
-        $('#menu').text('close');
+        $('#menu').text('Fermer');
     }, 500);
 }
 
@@ -36,9 +36,9 @@ function animateClosingMenu(){
     var body = $('body');
     var menu = $('.c_menu-aside');
     // Animate body to normal
-    body.animate({
-        marginLeft: '0'
-    }, 300);
+    // body.animate({
+    //     marginLeft: '0'
+    // }, 300);
 
     // Animate menu to the right
     menu.animate({
@@ -69,7 +69,7 @@ $('.c_description .c_slide').click(function(){
 });
 
 function slide(element){
-    element.children('.c_slide-hidden' ).slideToggle( "slow", function() {
+    element.children('.c_slide-hidden' ).slideToggle(function() {
         if(element.children('.c_slide-hidden' ).is(':hidden')){
             element.find('span.c_text-floatRight').text('+');
         }else{
