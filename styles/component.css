@@ -434,6 +434,14 @@ h5.c_block-dropdown-title{
     font-size: var(--font-size-bigText);
 }
 
+.c_palmares .c_index-title p{
+    color: white;
+}
+
+.c_palmares .c_index-listItem~.c_index-listItem{
+    margin-top: var(--margin-medium);
+}
+
 .c_index-item{
     margin-top: var(--margin-xxsmall);
 }
@@ -441,6 +449,10 @@ h5.c_block-dropdown-title{
 .c_index-item p, .c_index-item span{
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-bigText);
+}
+
+.c_palmares .c_index-item p, .c_palmares .c_index-item span{
+    color: white;
 }
 
 .c_index-item .s12{
