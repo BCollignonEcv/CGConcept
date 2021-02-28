@@ -68,7 +68,7 @@ $('.c_description .c_slide').click(function(){
 });
 
 function slide(element){
-    element.children('.c_slide-hidden' ).slideToggle(function() {
+    element.children('.c_slide-hidden' ).toggle("slide", { direction: "up" },function() {
         if(element.children('.c_slide-hidden' ).is(':hidden')){
             element.find('span.c_text-floatRight').text('+');
         }else{
@@ -80,6 +80,7 @@ function slide(element){
 /************ BESTOF ************/ 
 
 $('.c_bestOf-item').hover(function(){
-    console.log($(this).data('img'));
-    $('.c_bestOf-img').children('img').fadeToggle('slow');
+    $(this).data('img');
+    $('.c_bestOf-img').stop(1,1).fadeOut("fast");
+    $('.c_bestOf-img').eq($(this).data('img')).stop(1,1).fadeToggle('slow');
 });

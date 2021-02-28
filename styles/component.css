@@ -188,7 +188,7 @@ p > .c_link{
 
 .c_site-title{
     color: white;
-    margin-top: var(--margin-xlarge);
+    margin-top: 20vh;
     font-size: var(--font-size-bigTitle);
     line-height: var(--line-height-bigTitle);
 }
@@ -215,6 +215,13 @@ p > .c_link{
 }
 
 .c_sect-title.floating{
+    position: absolute;
+    z-index: 10;
+    top: var(--margin-medium);
+    left: var(--margin-medium);
+}
+
+.c_sect-title-fw.floating{
     position: absolute;
     z-index: 10;
     top: var(--margin-medium);
@@ -266,6 +273,14 @@ p > .c_link{
     .c_content-s{
         margin-top: initial;
     }
+
+    .c_site-title{
+        margin-top: var(--margin-xlarge);
+    }
+
+    .c_content-longText{
+        padding-bottom: var(--margin-large);
+    }
 }
 
 @media only screen and (min-width: 995px){
@@ -275,6 +290,10 @@ p > .c_link{
 
     .c_content-pl-2{
         padding-left: calc(100% / 6) !important;
+    }
+
+    .c_content-longText{
+        padding-bottom: unset;
     }
 }
 
@@ -383,7 +402,7 @@ p.c_block-text-secondary{
 }
 
 .c_block-tile-hover .c_block-title{
-    padding-top: 8vh;
+    padding-top: 6vh;
     text-align: center;
 }
 
@@ -421,12 +440,6 @@ h5.c_block-dropdown-title{
     .bg-secondary .c_block-tile{
         border-right: none;
     }
-    
-    .c_block-tile-hover{
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-    }
 
     .c_block-tile-hover .c_bubble{
         margin: unset;
@@ -434,6 +447,15 @@ h5.c_block-dropdown-title{
 
     .c_block-tile.c_block-tile-100{
         height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 995px){
+
+    .c_block-tile-hover{
+        height: 100vh;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -481,15 +503,6 @@ h5.c_block-dropdown-title{
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-bigText);
     transition: .3s ease;
-}
-
-.c_index .c_index-listItem:hover p{
-    color: var(--color-dark-v20);
-}
-
-.c_index .c_index-item:hover p{
-    color: var(--color-dark-v60);
-    cursor: pointer;
 }
 
 .c_palmares .c_index-item p, .c_palmares .c_index-item span{
@@ -564,6 +577,28 @@ h5.c_block-dropdown-title{
 @media only screen and (min-width: 661px){
     .c_index-item.c_slide .c_slide-hidden, .c_index-item.c_slide .c_slide-hidden span{
         font-weight: var(--font-weight-bold);
+    }
+
+    .c_index .c_index-listItem:hover p{
+        color: var(--color-dark-v20);
+    }
+    
+    .c_index .c_index-item:hover p{
+        color: var(--color-dark-v60);
+        cursor: pointer;
+    }
+
+    .c_palmares .c_index .c_index-title{
+        padding-top: 28vh;
+    }
+
+    .c_palmares .c_index-listItem:hover p{
+        color: white;
+    }
+
+    .c_palmares .c_index .c_index-item:hover p{
+        color: white;
+        cursor: unset;
     }
 }
 
