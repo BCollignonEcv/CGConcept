@@ -182,6 +182,11 @@ p > .c_link{
     padding-bottom: var(--margin-medium);
 }
 
+.c_sect-title h5{
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-100);
+}
+
 .c_sect-title.floating{
     position: absolute;
     z-index: 10;
@@ -203,6 +208,12 @@ p > .c_link{
 }
 
 .c_content p{
+    font-weight: var(--font-weight-bold);
+}
+
+.c_content-longText h2{
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
     font-weight: var(--font-weight-bold);
 }
 
@@ -400,7 +411,7 @@ h5.c_block-dropdown-title{
 /*****************************************/
 
 .c_index{
-    padding-bottom: calc(var(--margin-large) * 2);
+    padding-bottom: calc(var(--margin-large) * 3);
 }
 
 .c_index p{
@@ -408,7 +419,7 @@ h5.c_block-dropdown-title{
 }
 
 .c_index-title{
-    margin-bottom: var(--margin-xlarge);
+    margin-bottom: var(--margin-medium);
     font-weight: var(--font-weight-normal);
 }
 
@@ -490,6 +501,15 @@ h5.c_block-dropdown-title{
 }
 
 @media only screen and (min-width: 995px){
+
+    .c_index-title{
+        margin-bottom: var(--margin-xlarge);
+    }
+
+    .c_index .c_index-title{
+        margin-top: var(--margin-medium);
+    }
+
     .c_index-item .s12.c_slide-hidden{
         order: unset;
         color: var(--color-dark-v60);

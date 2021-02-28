@@ -339,11 +339,10 @@
 }
 
 .l_wrapper-middle.vertical{
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: unset;
     left: unset;
-    transform: translate(0, -50%);
-    width: 100%;
+    transform: none;
 }
 
 @media only screen and (min-width: 601px){
@@ -372,6 +371,20 @@
 
     .l_wrapper-content.right{
         padding: 0 calc(100vw / 16) 0 0;
+        height: 100%;
+    }
+
+    .l_wrapper-middle.vertical{
+        position: absolute;
+        top: 50%;
+        left: unset;
+        transform: translate(0, -50%);
+        width: 100%;
+    }
+
+    .l_wrapper-content.right .l_wrapper-middle.vertical{
+        left: calc(calc(100vw - calc(100vw / 6)) / 11.5);
+        padding-right: 13.2vw;
     }
 }
 
