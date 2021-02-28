@@ -17,6 +17,18 @@
     cursor: pointer;
 }
 
+.c_menu-bottom li{
+    padding: var(--margin-medium) calc(var(--margin-medium) / 2) var(--margin-medium) var(--margin-medium);
+}
+
+.c_menu-bottom li ~ li{
+    padding: var(--margin-medium) calc(var(--margin-medium) / 2);
+}
+
+.c_menu-bottom li:last-of-type{
+    padding-right: var(--margin-medium);
+}
+
 .c_menu .l_container li.l_col:last-of-type{
     padding-left:0;
 }
@@ -49,7 +61,7 @@
 
     .c_menu-aside .content{
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 0;
         transform: translate(0, -50%);
         width: 100%;
@@ -85,6 +97,10 @@
 @media only screen and (min-width: 661px){
     .c_footer{
         min-height: 66vh;
+    }
+
+    .c_footer .l_container ~ .l_container{
+        padding-top: calc(var(--margin-large) * 2.2);
     }
 }
 
@@ -149,8 +165,12 @@ p > .c_link{
     font-size: var(--font-size-bigLink);
     line-height: var(--line-height-bigLink);
     text-transform: none;
-    color: var(--color-dark-v40);
+    color: var(--color-dark-v20);
     border-top: 1px solid var(--color-dark-v10);
+}
+
+.c_link-nav.active{
+    color: var(--color-primary-100);
 }
 
 .c_link-nav:hover{
@@ -164,6 +184,13 @@ p > .c_link{
 .c_link-nav-empty{
     margin-bottom: var(--line-height-bigLink);
     border-bottom: 1px solid var(--color-dark-v10);
+}
+
+.c_site-title{
+    color: white;
+    margin-top: var(--margin-xlarge);
+    font-size: var(--font-size-bigTitle);
+    line-height: var(--line-height-bigTitle);
 }
 
 .c_page-title{
@@ -365,12 +392,12 @@ p.c_block-text-secondary{
     width: 100%;
     border-top: 1px solid var(--color-dark-v20);
     font-weight: var(--font-weight-bold);
-    padding-top: var(--line-height); 
+    padding-top: var(--margin-xsmall); 
 }
 
 h5.c_block-dropdown-title{
     margin: 0;
-    padding-bottom: var(--line-height);
+    padding-bottom: var(--margin-xsmall);
 }
 
 .c_block-dropdown-title span{
@@ -447,12 +474,22 @@ h5.c_block-dropdown-title{
 }
 
 .c_index-item{
-    margin-top: var(--margin-xxsmall);
+    padding-top: var(--margin-xxsmall);
 }
 
 .c_index-item p, .c_index-item span{
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-bigText);
+    transition: .3s ease;
+}
+
+.c_index .c_index-listItem:hover p{
+    color: var(--color-dark-v20);
+}
+
+.c_index .c_index-item:hover p{
+    color: var(--color-dark-v60);
+    cursor: pointer;
 }
 
 .c_palmares .c_index-item p, .c_palmares .c_index-item span{
@@ -474,8 +511,8 @@ h5.c_block-dropdown-title{
 }
 
 .c_index-big .c_index-item p{
-    font-size: var(--font-size-title);
-    line-height: var(--line-height-title);
+    font-size: var(--font-size-bigTitle);
+    line-height: var(--line-height-bigTitle);
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v20);
     text-transform: none;
@@ -700,7 +737,7 @@ h5.c_block-dropdown-title{
 }
 
 .bg-secondary .c_bubble span{
-    color: var(--color-dark-v10);
+    color: var(--color-dark-v20);
 }
 
 .c_bubble .c_bubble-title{
@@ -720,6 +757,11 @@ h5.c_block-dropdown-title{
 /***************** IMAGE *****************/
 /*****************************************/
 
+.c_bestOf-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /*****************************************/
 /*************** IMGFILTER ***************/

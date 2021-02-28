@@ -9,13 +9,12 @@ $('header #menu').click(function(){
 });
 
 function animateOpeningMenu(){
-    var body = $('body');
     var menu = $('.c_menu-aside');
+    let pos = $(window).scrollTop();
 
-    // Animate body to the left
-    // body.animate({
-    //     marginLeft: '-50vw'
-    // }, 400);
+    if(pos === 0){
+        $('#homeLink').fadeIn();
+    }
 
     // Animate menu to the left
     menu.animate({
@@ -23,30 +22,30 @@ function animateOpeningMenu(){
     },{
         duration: 300,
         specialEasing: {
-          left: "swing"
+          left: "easeOutExpo"
         }
     });
 
     setTimeout(function() {
         $('#menu').text('Fermer');
     }, 500);
+    
 }
 
 function animateClosingMenu(){
-    var body = $('body');
     var menu = $('.c_menu-aside');
-    // Animate body to normal
-    // body.animate({
-    //     marginLeft: '0'
-    // }, 300);
+    let pos = $(window).scrollTop();
 
+    if(pos === 0){
+        $('#homeLink').fadeOut();
+    }
     // Animate menu to the right
     menu.animate({
         left: '100vw'
     },{
         duration: 400,
         specialEasing: {
-          left: "swing"
+          left: "easeOutExpo"
         }
     });
     setTimeout(function() {
