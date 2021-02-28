@@ -223,6 +223,13 @@ span{
 /***************** CUSTOM ****************/
 /*****************************************/
 
+#landing-img{
+    background-image: url('../img/CGConcept_construction_de_pumptrack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #pumptrackterre-img{
     background-image: url('../img/pumptrack_terre.jpg');
     background-repeat: no-repeat;
@@ -232,13 +239,6 @@ span{
 
 #pumptrackenrobe-img{
     background-image: url('../img/pumptrack_terre.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#landing-img{
-    background-image: url('../img/test.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
