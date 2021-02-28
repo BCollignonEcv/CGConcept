@@ -478,10 +478,12 @@ h5.c_block-dropdown-title{
     line-height: var(--line-height-title);
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v20);
+    text-transform: none;
 }
 
 .c_index-big .c_index-title p{
     color: var(--color-dark-v20);
+    text-transform: none;
 }
 
 .c_index-big .c_index-item:hover p{
