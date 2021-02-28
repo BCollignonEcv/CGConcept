@@ -211,8 +211,12 @@ span{
     color: white;
 }
 
-p.primary{
+.primary{
     color: var(--color-primary-100) !important;
+}
+
+.neutral{
+    color: white !important;
 }
 
 /*****************************************/
