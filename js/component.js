@@ -79,8 +79,9 @@ function slide(element){
 
 /************ BESTOF ************/ 
 
-$('.c_bestOf-item').hover(function(){
-    $(this).data('img');
+$('.c_bestOf-item').mouseenter(function(){
+    $('.c_bestOf-item').removeClass('active');
+    $(this).addClass('active');
     $('.c_bestOf-img').stop(1,1).fadeOut("fast");
     $('.c_bestOf-img').eq($(this).data('img')).stop(1,1).fadeToggle('slow');
 });

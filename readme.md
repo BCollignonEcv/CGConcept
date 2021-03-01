@@ -37,8 +37,8 @@ ACCEUIL
 
 - Nos plus belles réalisations
     - Animation de nos plus belles réalisations
-    - Augmenter la taille des text de nos plus belles réalisations
-    - Ajouter un active
+    <!-- - Augmenter la taille des text de nos plus belles réalisations -->
+    <!-- - Ajouter un active -->
     - Ajouter un fond de couleur sur l'index nos plus belles réalisations
     - Changer l'image avec le pumptrack de la maquette
 
