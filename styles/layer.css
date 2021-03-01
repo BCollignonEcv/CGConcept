@@ -18,6 +18,10 @@
     flex-direction: column-reverse;
 }
 
+.c_bestOf.l_container.reverse{
+    flex-direction: column;
+}
+
 .l_col{
     width: 100%;
     height: auto;
@@ -239,7 +243,7 @@
 /*****************************************/
 
 .l_sect{
-    padding: var(--margin-medium) 0;
+    padding: var(--margin-medium) 0 var(--margin-medium) 0;
 }
 
 .l_halfHeight{
