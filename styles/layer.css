@@ -120,6 +120,10 @@
     .l_container.reverse{
         flex-direction: row;
     }
+
+    .c_bestOf.l_container.reverse{
+        flex-direction: row;
+    }
     
     .l_col.l1{
         width: calc(100% / 12);
