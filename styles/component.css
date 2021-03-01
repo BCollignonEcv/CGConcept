@@ -222,10 +222,11 @@ p > .c_link{
 }
 
 .c_sect-title-fw.floating{
-    position: absolute;
+    position: relative;
     z-index: 10;
-    top: var(--margin-medium);
-    left: var(--margin-medium);
+    top: 0;
+    left: 0;
+    padding: var(--margin-medium);
 }
 
 .c_content{
@@ -294,6 +295,14 @@ p > .c_link{
 
     .c_content-longText{
         padding-bottom: unset;
+    }
+
+    .c_sect-title-fw.floating{
+        position: absolute;
+        z-index: 10;
+        top: var(--margin-medium);
+        left: calc(100vw / 16 + 7.4vw);
+        padding: 0;
     }
 }
 
