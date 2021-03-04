@@ -398,27 +398,6 @@ p.c_block-text-secondary{
     font-weight: var(--font-weight-bold);
 }
 
-.c_block-tile-hover{
-    height: 35vh;
-    transition: .3s ease;
-    margin-left: 0;
-    margin-left: var(--margin-xsmall-negative);
-    padding-left: var(--margin-xsmall);
-}
-
-.c_block-tile-hover:hover{
-    background-color: var(--color-primary-100);
-}
-
-.c_block-tile-hover:hover .c_bubble{
-    background-color: var(--color-dark-v40);
-}
-
-.c_block-tile-hover .c_block-title{
-    padding-top: 6vh;
-    text-align: center;
-}
-
 .c_block-dropdown-title{
     color: var(--color-dark-v60);
     width: 100%;
@@ -454,27 +433,82 @@ h5.c_block-dropdown-title{
         border-right: none;
     }
 
-    .c_block-tile-hover .c_bubble{
-        margin: unset;
-    }
-
     .c_block-tile.c_block-tile-100{
         height: 100vh;
+        transition: .5s;
     }
 }
 
 @media only screen and (min-width: 995px){
 
-    .c_block-tile-hover{
+}
+
+/*****************************************/
+/****************** SCALE ****************/
+/*****************************************/
+
+.c_scale{
+    height: 50vh;
+    width: 100%;
+    transition: 2s ease;
+    overflow: hidden;
+    margin-bottom: var(--margin-medium);
+}
+
+.c_scale .c_block-text{
+    border-left:1px solid var(--color-primary-100);
+    border-right:1px solid var(--color-primary-100);
+    padding: 0 var(--margin-small);
+    height: 100%;
+    transition: .5s;
+}
+
+.c_scale .c_block-text .c_block-title{
+    padding-top: 30%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 995px){
+    .c_scale{
         height: 100vh;
-        margin: 0;
-        padding: 0;
+        width: 100%;
+        transition: 2s ease;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    
+    .c_scale .c_block-text{
+        border-left:1px solid var(--color-primary-100);
+        border-right: none;
+        padding-left: var(--margin-small);
+        margin-top: 25vh;
+        height: 50%;
+        transition: .5s;
+    }
+    
+    .c_scale .c_block-text .c_block-title{
+        padding-top: 40%;
+        text-align: center;
+    }
+    
+    .c_scale:hover .c_block-text{
+        height: 100%;
+        margin-top: 0;
+        padding-top: 50%;
+        height: 100%;
+        background-color: var(--color-primary-100);
+    }
+    
+    .c_scale:hover .c_bubble{
+        background-color: var(--color-dark-v40);
+    }
+    
+    .c_scale:hover .c_bubble-title{
+        color: var(--color-primary-100);
     }
 
-    .c_block-tile-hover{
-        padding-top: 15vh;
-    }
 }
+
 
 /*****************************************/
 /****************** INDEX ****************/
@@ -519,7 +553,7 @@ h5.c_block-dropdown-title{
 .c_index-item p, .c_index-item span{
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-bigText);
-    transition: .3s ease;
+    transition: .1s ease;
 }
 
 .c_palmares .c_index-item p, .c_palmares .c_index-item span{
@@ -596,6 +630,10 @@ h5.c_block-dropdown-title{
         font-weight: var(--font-weight-bold);
     }
 
+    .c_index .c_index-listItem p{
+        transition: .6s;
+    }
+
     .c_index .c_index-listItem:hover p{
         color: var(--color-dark-v20);
     }
@@ -603,6 +641,7 @@ h5.c_block-dropdown-title{
     .c_index .c_index-item:hover p{
         color: var(--color-dark-v60);
         cursor: pointer;
+        transition: .3s ease;
     }
 
     .c_palmares .c_index .c_index-title{
@@ -820,12 +859,15 @@ h5.c_block-dropdown-title{
 }
 
 /*****************************************/
-/*************** IMGFILTER ***************/
+/*************** IMG ***************/
 /*****************************************/
 
 .c_img-filter{
     width: 100%;
     height: 100%;
+}
+
+.c_bgImg-zoom:hover{
 }
 
 

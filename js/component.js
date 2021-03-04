@@ -68,7 +68,7 @@ $('.c_description .c_slide').click(function(){
 });
 
 function slide(element){
-    element.children('.c_slide-hidden' ).toggle("slide", { direction: "up" },function() {
+    element.children('.c_slide-hidden' ).slideToggle(function() {
         if(element.children('.c_slide-hidden' ).is(':hidden')){
             element.find('span.c_text-floatRight').text('+');
         }else{
