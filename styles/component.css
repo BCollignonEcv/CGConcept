@@ -661,7 +661,7 @@ h5.c_block-dropdown-title{
 @media only screen and (min-width: 995px){
 
     .c_index-title{
-        margin-bottom: var(--margin-xlarge);
+        margin-bottom: calc(var(--margin-xlarge) * 2);
     }
 
     .c_index .c_index-title{
