@@ -31,7 +31,7 @@ $(window).scroll(function (event) {
     }
 
     $('section').each(function(){
-        if(pos > ($(this).offset().top - $(window).height() * 0.9)){
+        if(pos > ($(this).offset().top - $(window).height() * 0.7)){
             $(this).children().fadeIn('slow');
         }
     })
