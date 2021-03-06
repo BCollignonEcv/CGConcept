@@ -478,7 +478,7 @@ h5.c_block-dropdown-title{
     text-align: center;
     text-transform: uppercase;
     font-size: var(--font-size-bigText);
-    line-height: var(--line-height);
+    line-height: var(--line-height-bigText);
     font-weight: var(--font-weight-bold);
 }
 
