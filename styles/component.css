@@ -530,6 +530,10 @@ h5.c_block-dropdown-title{
     padding-bottom: calc(var(--margin-large) * 3);
 }
 
+.c_palmares .c_index{
+    padding-bottom: var(--margin-medium);
+}
+
 .c_index p{
     text-transform: none;
 }
@@ -656,7 +660,7 @@ h5.c_block-dropdown-title{
     }
 
     .c_palmares .c_index .c_index-title{
-        padding-top: 28vh;
+        padding-top: 35vh;
     }
 
     .c_palmares .c_index-listItem:hover p{
