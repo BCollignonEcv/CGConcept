@@ -46,8 +46,8 @@ ACCEUIL
     <!-- - Animation de nos plus belles réalisations -->
     <!-- - Augmenter la taille des text de nos plus belles réalisations -->
     <!-- - Ajouter un active -->
-    - Ajouter un fond de couleur sur l'index nos plus belles réalisations
-    - Index Reduire margin top entre title et content
+    <!-- - Ajouter un fond de couleur sur l'index nos plus belles réalisations -->
+    <!-- - Index Reduire margin top entre title et content -->
 
 - Palmares
     <!-- - Index Reduire margin top entre title et content -->
