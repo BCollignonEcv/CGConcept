@@ -432,6 +432,7 @@ p.c_block-text-secondary{
     width: 90%;
     text-align: center;
     font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-bigText);
 }
 
 .c_block-dropdown-title{
@@ -475,7 +476,7 @@ h5.c_block-dropdown-title{
     padding-top: 30%;
     text-align: center;
     text-transform: uppercase;
-    font-size: var(--font-size);
+    font-size: var(--font-size-bigText);
     line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
 }

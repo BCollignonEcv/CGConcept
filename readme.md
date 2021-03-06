@@ -41,6 +41,7 @@ ACCEUIL
 
 - Scale
     <!-- - Passer la font en bold -->
+    - Adapté la taille au block text fun fact
 
 - Nos plus belles réalisations
     <!-- - Animation de nos plus belles réalisations -->
