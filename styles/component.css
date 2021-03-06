@@ -341,6 +341,7 @@ p.c_block-text-secondary{
     margin-left: var(--margin-xsmall-negative);
     margin-right: var(--margin-xsmall-negative);
     padding-left: var(--margin-xsmall);
+    margin-right: var(--margin-xsmall);
     height: 40vh;
     position: relative;
 }
