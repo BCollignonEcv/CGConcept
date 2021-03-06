@@ -75,7 +75,7 @@
 /*****************************************/
 
 .c_footer{
-    background-color: var(--color-dark-v40);
+    background-color: var(--color-dark-v50);
     min-height: 100vh;
     position: -webkit-sticky;
     position: sticky;
