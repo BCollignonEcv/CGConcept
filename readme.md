@@ -35,12 +35,25 @@ ACCEUIL
 - Landing page
     <!-- - Ajouter le titre -->
 
+- Les différents type de pump track
+    <!-- - Image avec filtre -->
+    <!-- - Grossir le text -->
+
+- Scale
+    <!-- - Passer la font en bold -->
+
 - Nos plus belles réalisations
-    - Animation de nos plus belles réalisations
+    <!-- - Animation de nos plus belles réalisations -->
     <!-- - Augmenter la taille des text de nos plus belles réalisations -->
     <!-- - Ajouter un active -->
     - Ajouter un fond de couleur sur l'index nos plus belles réalisations
-    - Changer l'image avec le pumptrack de la maquette
+    - Index Reduire margin top entre title et content
+
+- Palmares
+    <!-- - Index Reduire margin top entre title et content -->
+    <!-- - Section trop haute -->
+
+
 
 SERVICES
 
@@ -51,11 +64,14 @@ INDEX
 <!-- - Text gris foncé de base -->
 <!-- - Text gris au hover de l'index -->
 <!-- - Text gris foncé sur l'élément actifs -->
+    - Ajouter un margin sur mobile à l'ouverture
+    - Ajouter un padding sur chaque ligne de l'index
 
 CONTACT
 
 - Changer les couleurs de la map avec des nuances de gris plus faible
 - Retirer le nom des pays
+- Gestion des accents input
 
 MENU 
 

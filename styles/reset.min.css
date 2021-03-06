@@ -22,7 +22,7 @@ a, abbr{
 }
 
 a:visited{
-    color: initial;
+    color: unset;
 }
 
 figure{

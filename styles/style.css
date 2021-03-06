@@ -27,10 +27,6 @@ a{
     line-height: var(--line-height);
 }
 
-a:visited{
-    color: var(--color-dark-v60);
-}
-
 h1{
     font-size: var(--font-size-headTitle);
     line-height: var(--line-height-headTitle);
@@ -231,17 +227,25 @@ span{
 }
 
 #pumptrackterre-img{
-    background-image: url('../img/pumptrack_terre.jpg');
+    background-image: url('../img/CGConcept_construction_de_pumptrack.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
 }
 
+#pumptrackterre-img.c_bgScale:hover{
+    background-size: auto 120%;
+}
+
 #pumptrackenrobe-img{
-    background-image: url('../img/pumptrack_terre.jpg');
+    background-image: url('../img/CGConcept_construction_de_pumptrack.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
+}
+
+#pumptrackenrobe-img.c_bgScale:hover{
+    background-size: auto 120%;
 }
 
 #chaneyPresentation{

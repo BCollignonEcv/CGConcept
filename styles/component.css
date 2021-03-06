@@ -143,6 +143,10 @@
     cursor: pointer;
 }
 
+.c_link:visited{
+    color: var(--color-dark-v60);
+}
+
 p > .c_link{
     display: inline;
 }
@@ -169,12 +173,16 @@ p > .c_link{
     border-top: 1px solid var(--color-dark-v10);
 }
 
-.c_link-nav.active{
+.c_link-nav.active, .c_link-nav.active:visited{
     color: var(--color-primary-100);
 }
 
-.c_link-nav:hover{
+.c_link-nav:hover, .c_link-nav:hover:visited{
     color: var(--color-primary-100);
+}
+
+a.c_link-nav:visited{
+    color: var(--color-dark-v20);
 }
 
 .c_link-nav:last-of-type{
@@ -354,16 +362,9 @@ p.c_block-text-secondary{
     height: 50vh;
 }
 
-.c_block-tile.c_block-tile-100:hover{
-    background-color: var(--color-dark-o60);
-}
-
-.c_block-tile.c_block-tile-100:hover .c_block-title{
-    color: var(--color-primary-100);
-}
-
 .c_block-tile.c_block-tile-100 .c_block-title{
     color: white;
+    font-size: var(--font-size-bigText);
 }
 
 .c_block-tile.c_block-tile-100 .c_bubble{
@@ -473,6 +474,7 @@ h5.c_block-dropdown-title{
     text-transform: uppercase;
     font-size: var(--font-size);
     line-height: var(--line-height);
+    font-weight: var(--font-weight-bold);
 }
 
 @media only screen and (min-width: 995px){
@@ -667,7 +669,11 @@ h5.c_block-dropdown-title{
 @media only screen and (min-width: 995px){
 
     .c_index-title{
-        margin-bottom: calc(var(--margin-xlarge) * 2);
+        margin-bottom: var(--margin-medium);
+    }
+
+    .c_index-title.big{
+        margin-bottom: calc(var(--margin-medium) * 2);
     }
 
     .c_index .c_index-title{
@@ -681,12 +687,32 @@ h5.c_block-dropdown-title{
         display: flex;
     }
 
+    .c_palmares .c_index-item .s12{
+        order: unset;
+        margin: 0;
+    }
+
     .c_index .c_slide{
-        cursor: unset;
+        cursor: unset; 
     }
 
     .c_index .c_index-listItem .l10 .l2{
         width: calc(100% / 5);
+    }
+
+    .c_index-title .c_index-item-shift{
+        margin-left: -5%;
+        margin-right: 5%;
+    }
+    
+    .c_index-item .c_index-item-shift{
+        margin-left: -5%;
+        margin-right: 5%;
+    }
+
+    .c_index-item .s12.c_index-item-shift{
+        margin-left: -5%;
+        margin-right: 5%;
     }
 }
 
@@ -873,7 +899,12 @@ h5.c_block-dropdown-title{
     height: 100%;
 }
 
-.c_bgImg-zoom:hover{
+.c_bgScale{
+    transition: .5s ease-in-out;
+}
+
+.c_bgScale:hover{
+    background-size: auto 120%;
 }
 
 
