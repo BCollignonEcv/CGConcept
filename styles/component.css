@@ -284,7 +284,10 @@ a.c_link-nav:visited{
     }
 
     .c_site-title{
-        margin-top: var(--margin-xlarge);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: calc(var(--margin-xlarge) * 2);
     }
 
     .c_content-longText{
