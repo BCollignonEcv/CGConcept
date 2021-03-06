@@ -29,6 +29,7 @@ MENU
 FOOTER
 
 <!-- - Ajouter de l'espace entre contact et suivez-nous -->
+    - augmenter en teinte sombre les fonts du footer
 
 ACCEUIL 
 
@@ -42,6 +43,7 @@ ACCEUIL
 - Scale
     <!-- - Passer la font en bold -->
     - Adapté la taille au block text fun fact
+    - faire la version mobile inline
 
 - Nos plus belles réalisations
     <!-- - Animation de nos plus belles réalisations -->
@@ -70,8 +72,8 @@ INDEX
 
 CONTACT
 
-- Changer les couleurs de la map avec des nuances de gris plus faible
-- Retirer le nom des pays
+<!-- - Changer les couleurs de la map avec des nuances de gris plus faible -->
+<!-- - Retirer le nom des pays -->
 - Gestion des accents input
 
 MENU 

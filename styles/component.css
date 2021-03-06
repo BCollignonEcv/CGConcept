@@ -889,6 +889,11 @@ h5.c_block-dropdown-title{
 /***************** Best Of *****************/
 /*****************************************/
 
+
+.c_bestOf-item{
+    padding-top: 0;
+}
+
 .c_bestOf-item.active p{
     color: var(--color-primary-100) !important;
 }
