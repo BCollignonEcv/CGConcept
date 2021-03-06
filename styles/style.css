@@ -32,7 +32,7 @@ h1{
     line-height: var(--line-height-headTitle);
     font-weight: var(--font-weight-bold);
     text-transform: none;
-    margin-left: -2px;
+    padding-left: -2px;
     color: var(--color-dark-v60);
 }
 
