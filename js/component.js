@@ -68,7 +68,7 @@ $('.c_description .c_slide').click(function(){
 });
 
 function slide(element){
-    element.children('.c_slide-hidden' ).fadeToggle(function(){
+    element.children('.c_slide-hidden' ).fadeToggle('linear', function(){
         if(element.children('.c_slide-hidden' ).css('display') == 'none'){
             element.find('span.c_text-floatRight').text('+');
         }else{
