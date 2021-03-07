@@ -588,7 +588,7 @@ h5.c_block-dropdown-title{
 }
 
 .c_index-item{
-    padding-top: var(--margin-xxsmall);
+    padding-top: var(--margin-xsmall);
 }
 
 .c_index-item p, .c_index-item span{
@@ -679,6 +679,10 @@ h5.c_block-dropdown-title{
 }
 
 @media only screen and (min-width: 661px){
+    .c_index-item{
+        padding-top: var(--margin-xxsmall);
+    }
+
     .c_index-item.c_slide .c_slide-hidden, .c_index-item.c_slide .c_slide-hidden span{
         font-weight: var(--font-weight-bold);
     }
