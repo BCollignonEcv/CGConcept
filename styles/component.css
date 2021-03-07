@@ -340,7 +340,6 @@ p.c_block-text-secondary{
     margin-left: var(--margin-xsmall-negative);
     margin-right: var(--margin-xsmall-negative);
     padding-left: var(--margin-xsmall);
-    margin-right: var(--margin-xsmall);
     height: 40vh;
     position: relative;
 }
@@ -621,8 +620,8 @@ h5.c_block-dropdown-title{
 }
 
 .c_index-big .c_index-item p{
-    font-size: var(--font-size-bigTitle);
-    line-height: var(--line-height-bigTitle);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
     font-weight: var(--font-weight-bold);
     color: var(--color-dark-v20);
     text-transform: none;
@@ -734,6 +733,11 @@ h5.c_block-dropdown-title{
         color: var(--color-dark-v60);
         margin: unset;
         display: flex;
+    }
+
+    .c_index-big .c_index-item p{
+        font-size: var(--font-size-bigTitle);
+        line-height: var(--line-height-bigTitle);
     }
 
     .c_palmares .c_index-item .s12{
