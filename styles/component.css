@@ -512,6 +512,10 @@ h5.c_block-dropdown-title{
         transition: .5s;
     }
 
+    .c_scale .c_block-text.last{
+        border-right:1px solid var(--color-primary-100);
+    }
+
     .c_scale .c_block-text .c_block-content{
         position: relative;
         right: unset;

@@ -42,8 +42,8 @@ ACCEUIL
 
 - Scale
     <!-- - Passer la font en bold -->
-    - Adapté la taille au block text fun fact
-    - faire la version mobile inline
+    <!-- - Adapté la taille au block text fun fact -->
+    <!-- - faire la version mobile inline -->
 
 - Nos plus belles réalisations
     <!-- - Animation de nos plus belles réalisations -->
