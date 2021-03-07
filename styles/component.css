@@ -500,6 +500,10 @@ h5.c_block-dropdown-title{
         overflow: hidden;
         margin-bottom: 0;
     }
+
+    .c_scale.last{
+        border-bottom: none;
+    }
     
     .c_scale .c_block-text{
         border-top: none;
