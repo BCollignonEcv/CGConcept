@@ -58,7 +58,7 @@ function animateClosingMenu(){
 $('.c_index .c_slide').click(function(){
     let item = $(this);
     if($(window).width() < 995){
-        slide(item);
+        customShow(item);
     }
 });
 
@@ -67,7 +67,7 @@ $('.c_description .c_slide').click(function(){
     slide(item);
 });
 
-function slide(element){
+function customShow(element){
     element.children('.c_slide-hidden' ).fadeToggle('linear', function(){
         if(element.children('.c_slide-hidden' ).css('display') == 'none'){
             element.find('span.c_text-floatRight').text('+');
@@ -75,14 +75,17 @@ function slide(element){
             element.find('span.c_text-floatRight').text('−');
         }
     });
+}
 
-    // element.children('.c_slide-hidden' ).slideToggle(function() {
-    //     if(element.children('.c_slide-hidden' ).is(':hidden')){
-    //         element.find('span.c_text-floatRight').text('+');
-    //     }else{
-    //         element.find('span.c_text-floatRight').text('−');
-    //     }
-    // });
+function slide(element){
+
+    element.children('.c_slide-hidden' ).slideToggle(function() {
+        if(element.children('.c_slide-hidden' ).is(':hidden')){
+            element.find('span.c_text-floatRight').text('+');
+        }else{
+            element.find('span.c_text-floatRight').text('−');
+        }
+    });
 }
 
 /************ BESTOF ************/ 
