@@ -349,8 +349,19 @@ p.c_block-text-secondary{
     margin-left: var(--margin-xsmall-negative);
     margin-right: var(--margin-xsmall-negative);
     padding-left: var(--margin-xsmall);
-    height: 40vh;
+    height: 25vh;
     position: relative;
+}
+
+.c_block-tile .c_block-title{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-bigText);
 }
 
 .c_index-listItem .c_block-tile{
@@ -361,6 +372,7 @@ p.c_block-text-secondary{
     color: var(--color-primary-100);
 }
 
+
 .c_block-tile.last{
     margin-right: var(--margin-xsmall-negative);
     border-right: 1px solid var(--color-primary-100);
@@ -370,7 +382,7 @@ p.c_block-text-secondary{
     padding: var(--margin-medium);
     margin-left: 0;
     margin-right: 0;
-    height: 50vh;
+    height: 40vh;
 }
 
 .c_block-tile.c_block-tile-100 .c_block-title{
@@ -379,7 +391,7 @@ p.c_block-text-secondary{
 }
 
 .c_block-tile.c_block-tile-100 .c_bubble{
-    margin-top: calc(var(--margin-xlarge));
+    margin-top: var(--margin-xlarge);
 }
 
 .bg-primary .c_block-tile{
@@ -404,6 +416,7 @@ p.c_block-text-secondary{
 
     .c_block-tile{
         border-right: none;
+        height: 40vh;
     }
 
     .c_block-tile.last{
@@ -422,6 +435,11 @@ p.c_block-text-secondary{
         height: 100vh;
         transition: .5s;
     }
+
+    
+    .c_block-tile .c_block-title{
+        top: 50%;
+    }
 }
 
 @media only screen and (min-width: 995px){
@@ -431,17 +449,6 @@ p.c_block-text-secondary{
 /*****************************************/
 /*************** DROPDOWN ****************/
 /*****************************************/
-
-.c_block-tile .c_block-title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-bigText);
-}
 
 .c_block-dropdown-title{
     color: var(--color-dark-v60);
@@ -512,6 +519,7 @@ h5.c_block-dropdown-title{
 
     .c_scale.last{
         border-bottom: none;
+        margin-bottom: 0;
     }
     
     .c_scale .c_block-text{
@@ -632,6 +640,10 @@ h5.c_block-dropdown-title{
     margin-top: var(--margin-xxsmall);
 }
 
+.c_index-big{
+    min-height: 20vh
+}
+
 .c_index-big .c_index-item p{
     font-size: 2.4rem;
     line-height: 2.6rem;
@@ -663,7 +675,7 @@ h5.c_block-dropdown-title{
 }
 
 .c_index .c_slide .c_slide-hidden.last{
-    padding-bottom: var(--margin-small);
+    padding-bottom: var(--margin-medium);
 }
 
 .c_description .c_slide .c_slide-hidden{
@@ -862,6 +874,10 @@ h5.c_block-dropdown-title{
 
 .c_tile-secondary{
     height: 30vh;
+}
+
+.c_tile-secondary .c_tile_img-background{
+    width: 100%;
 }
 
 .c_tile-tertiary{

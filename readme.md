@@ -35,10 +35,14 @@ ACCEUIL
 
 - Landing page
     <!-- - Ajouter le titre -->
+    - Modifier 
 
 - Les différents type de pump track
     <!-- - Image avec filtre -->
     <!-- - Grossir le text -->
+
+- Block-text bubble
+    - Ajouter une margin entre les éléments
 
 - Scale
     <!-- - Passer la font en bold -->
