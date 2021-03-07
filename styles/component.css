@@ -376,6 +376,7 @@ p.c_block-text-secondary{
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
+    padding-right: var(--margin-small);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-bigText);
 }
@@ -564,6 +565,7 @@ h5.c_block-dropdown-title{
     .c_scale .c_block-text .c_block-title{
         padding-top: 25%;
         text-align: center;
+        padding-right: var(--margin-small);
     }
     
     .c_scale:hover .c_block-text{
