@@ -457,28 +457,40 @@ h5.c_block-dropdown-title{
 /*****************************************/
 
 .c_scale{
-    height: 50vh;
+    height: auto;
     width: 100%;
     transition: 2s ease;
     overflow: hidden;
-    margin-bottom: var(--margin-medium);
 }
 
 .c_scale .c_block-text{
-    border-left:1px solid var(--color-primary-100);
-    border-right:1px solid var(--color-primary-100);
-    padding: 0 var(--margin-small);
+    border-top:1px solid var(--color-primary-100);
+    padding: var(--margin-small) 0;
     height: 100%;
     transition: .5s;
+    position: relative;
+}
+
+.c_scale.last{
+    border-bottom:1px solid var(--color-primary-100);
+    margin-bottom: var(--margin-medium);
 }
 
 .c_scale .c_block-text .c_block-title{
-    padding-top: 30%;
     text-align: center;
     text-transform: uppercase;
     font-size: var(--font-size-bigText);
     line-height: var(--line-height-bigText);
     font-weight: var(--font-weight-bold);
+    padding-bottom: 0;
+}
+
+.c_scale .c_block-text .c_block-content{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30ch;
 }
 
 @media only screen and (min-width: 995px){
@@ -491,16 +503,25 @@ h5.c_block-dropdown-title{
     }
     
     .c_scale .c_block-text{
+        border-top: none;
         border-left:1px solid var(--color-primary-100);
         border-right: none;
         padding-left: var(--margin-small);
-        margin-top: 25vh;
-        height: 50%;
+        margin-top: 30vh;
+        height: 40vh;
         transition: .5s;
+    }
+
+    .c_scale .c_block-text .c_block-content{
+        position: relative;
+        right: unset;
+        top: unset;
+        transform: none;
+        width: unset;
     }
     
     .c_scale .c_block-text .c_block-title{
-        padding-top: 40%;
+        padding-top: 25%;
         text-align: center;
     }
     
@@ -621,6 +642,14 @@ h5.c_block-dropdown-title{
     display: none;
 }
 
+.c_index .c_slide .c_slide-hidden.first{
+    padding-top: var(--margin-xxsmall);
+}
+
+.c_index .c_slide .c_slide-hidden.last{
+    padding-bottom: var(--margin-xsmall);
+}
+
 .c_description .c_slide .c_slide-hidden{
     padding-bottom: var(--line-height);
 }
@@ -649,6 +678,14 @@ h5.c_block-dropdown-title{
 @media only screen and (min-width: 661px){
     .c_index-item.c_slide .c_slide-hidden, .c_index-item.c_slide .c_slide-hidden span{
         font-weight: var(--font-weight-bold);
+    }
+
+    .c_index .c_slide .c_slide-hidden.first{
+        padding-top: unset;
+    }
+    
+    .c_index .c_slide .c_slide-hidden.last{
+        padding-bottom: unset;
     }
 
     .c_index .c_index-listItem:hover p{

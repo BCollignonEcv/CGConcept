@@ -22,7 +22,7 @@ MENU
 <!-- - Reduire l'inter margin entre les éléments du footer sur le menu -->
 <!-- - Reduire la taille des liens dans le menu col -1 -->
 <!-- - Remonter les liens du menu  -->
-- Changer la couleur des liens (-> gris) du menu et ajouter une classe active sur la page courante
+<!-- - Changer la couleur des liens (-> gris) du menu et ajouter une classe active sur la page courante -->
 <!-- - téléphone +33 (0)7 87 95 37 79 -->
 <!-- - "Fermer" au lieu de "close" -->
 
