@@ -196,8 +196,8 @@ a.c_link-nav:visited{
 .c_site-title{
     color: white;
     margin-top: 20vh;
-    font-size: var(--font-size-bigTitle);
-    line-height: var(--line-height-bigTitle);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
 }
 
 .c_page-title{
@@ -233,7 +233,7 @@ a.c_link-nav:visited{
     z-index: 10;
     top: 0;
     left: 0;
-    padding: var(--margin-medium);
+    padding: var(--margin-medium) 0;
 }
 
 .c_content{
@@ -270,6 +270,15 @@ a.c_link-nav:visited{
 }
 
 @media only screen and (min-width: 661px){
+
+    .c_sect-title-fw.floating{
+        position: relative;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        padding: var(--margin-medium);
+    }
+
     .c_text-alignRight-m{
         text-align: right;
     }
@@ -650,11 +659,11 @@ h5.c_block-dropdown-title{
 }
 
 .c_index .c_slide .c_slide-hidden.first{
-    padding-top: var(--margin-xxsmall);
+    padding-top: var(--margin-xsmall);
 }
 
 .c_index .c_slide .c_slide-hidden.last{
-    padding-bottom: var(--margin-xsmall);
+    padding-bottom: var(--margin-small);
 }
 
 .c_description .c_slide .c_slide-hidden{
