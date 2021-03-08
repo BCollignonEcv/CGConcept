@@ -405,8 +405,8 @@ p.c_block-text-secondary{
     font-size: var(--font-size-bigText);
 }
 
-.c_block-tile.c_block-tile-100 .c_bubble{
-    margin-top: var(--margin-xlarge);
+.c_block-tile.c_block-tile-100.first .c_bubble{
+    margin-top: var(--margin-large);
 }
 
 .bg-primary .c_block-tile{
@@ -455,6 +455,10 @@ p.c_block-text-secondary{
     
     .c_block-tile .c_block-title{
         top: 50%;
+    }
+
+    .c_block-tile.c_block-tile-100 .c_bubble{
+        margin-top: var(--margin-xlarge);
     }
 }
 
