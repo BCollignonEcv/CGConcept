@@ -541,6 +541,7 @@ h5.c_block-dropdown-title{
 
 .c_scale .c_block-text .c_block-desc{
     display: none;
+    color: var(--color-dark-v50);
 }
 
 @media only screen and (min-width: 995px){
@@ -580,7 +581,7 @@ h5.c_block-dropdown-title{
     }
     
     .c_scale .c_block-text .c_block-title{
-        padding-top: 26%;
+        padding-top: 27%;
         text-align: center;
         padding-right: var(--margin-small);
     }
