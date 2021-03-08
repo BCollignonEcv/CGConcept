@@ -464,11 +464,13 @@ p.c_block-text-secondary{
 
 @media only screen and (min-width: 995px){
 
-    p.c_block-text-secondary{
+    .c_description p.c_block-text-secondary{
         display: block;
         color: var(--color-dark-v20);
         padding-bottom: var(--margin-large);
     }
+
+
 }
 
 /*****************************************/
@@ -1035,7 +1037,7 @@ h5.c_block-dropdown-title{
 }
 
 .c_bestOf-item p{
-    transition: 1s;
+    transition: .3s ease;
 }
 
 .c_bestOf-item.active p{
