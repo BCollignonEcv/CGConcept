@@ -254,6 +254,10 @@
     padding: var(--margin-medium) 0 var(--margin-medium) 0;
 }
 
+.l_sect.text{
+    padding-bottom: calc(var(--margin-medium)*2);
+}
+
 .l_halfHeight{
     height: 50%;
 }
@@ -289,6 +293,10 @@
     
     .l_sect-50{
         min-height: 50vh;
+    }
+
+    .l_sect.text{
+        padding-bottom: unset;
     }
 }
 
