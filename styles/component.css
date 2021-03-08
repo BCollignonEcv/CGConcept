@@ -458,7 +458,7 @@ p.c_block-text-secondary{
     }
 
     .c_block-tile.c_block-tile-100 .c_bubble{
-        margin-top: var(--margin-xlarge);
+        margin-top: var(--margin-large);
     }
 }
 
@@ -1032,11 +1032,18 @@ h5.c_block-dropdown-title{
 
 .c_bestOf-item{
     padding-top: 0;
-    transition: 1s ease;
+}
+
+.c_bestOf-item p{
+    transition: 1s;
 }
 
 .c_bestOf-item.active p{
     color: var(--color-primary-100) !important;
+}
+
+.c_bestOf-item.active p.l6{
+    padding-left: var(--margin-medium);
 }
 
 .c_bestOf-img{
