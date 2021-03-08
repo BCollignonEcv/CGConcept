@@ -34,15 +34,15 @@ FOOTER
 ACCEUIL 
 
 - Landing page
+
     <!-- - Ajouter le titre -->
-    - Modifier 
+    - Modifier
 
 - Les différents type de pump track
     <!-- - Image avec filtre -->
     <!-- - Grossir le text -->
-
-- Block-text bubble
-    - Ajouter une margin entre les éléments
+    <!-- - Block-text bubble -->
+    <!-- - Ajouter une margin entre les éléments -->
 
 - Scale
     <!-- - Passer la font en bold -->
@@ -60,19 +60,17 @@ ACCEUIL
     <!-- - Index Reduire margin top entre title et content -->
     <!-- - Section trop haute -->
 
-
-
 SERVICES
 
 <!-- - Reduir les margins des dropdown -->
 
-INDEX 
+INDEX
 
 <!-- - Text gris foncé de base -->
 <!-- - Text gris au hover de l'index -->
 <!-- - Text gris foncé sur l'élément actifs -->
-    - Ajouter un margin sur mobile à l'ouverture
-    - Ajouter un padding sur chaque ligne de l'index
+<!-- - Ajouter un margin sur mobile à l'ouverture -->
+<!-- - Ajouter un padding sur chaque ligne de l'index -->
 
 CONTACT
 
@@ -80,6 +78,6 @@ CONTACT
 <!-- - Retirer le nom des pays -->
 - Gestion des accents input
 
-MENU 
+MENU
 
 <!-- - Changer le easing de l'animation de menu -->
