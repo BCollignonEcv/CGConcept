@@ -981,6 +981,10 @@ h5.c_block-dropdown-title{
     min-width: 100%;
 }
 
+.c_tile_img .c_tile_img-background.bg-primary{
+    background-color: var(--color-primary-100);
+}
+
 @media only screen and (min-width: 995px){
     .c_tile-primary{
         height: 100vh;
