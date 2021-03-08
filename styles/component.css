@@ -554,7 +554,7 @@ h5.c_block-dropdown-title{
         border-top: none;
         border-left:1px solid var(--color-primary-100);
         border-right: none;
-        padding-left: var(--margin-small);
+        padding: 0 0 0 var(--margin-small);
         margin-top: 30vh;
         height: 40vh;
         transition: .5s;
