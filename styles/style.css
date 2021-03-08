@@ -226,6 +226,10 @@ span{
     background-position: center;
 }
 
+#landing-img .c_tile-primary{
+    height: 100vh;
+}
+
 #pumptrackterre-img{
     background-image: url('../img/CGConcept_construction_de_pumptrack.jpg');
     background-repeat: no-repeat;
