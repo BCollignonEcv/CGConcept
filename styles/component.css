@@ -733,7 +733,7 @@ h5.c_block-dropdown-title{
 }
 
 .c_index .c_slide .c_slide-hidden.last{
-    padding-bottom: var(--margin-xsmall);
+    padding-bottom: var(--margin-xsmall); 
 }
 
 .c_description .c_slide .c_slide-hidden{
