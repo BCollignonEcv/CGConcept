@@ -142,7 +142,7 @@
     float: right;
 }
 
-.c_link{
+.c_link, .c_link:visited{
     text-decoration: none;
     display: block;
     color: var(--color-dark-v80);
@@ -151,8 +151,8 @@
     cursor: pointer;
 }
 
-.c_link:visited{
-    color: var(--color-dark-v80);
+.c_link.white, .c_link.white:visited{
+    color: white;
 }
 
 p > .c_link{
@@ -286,7 +286,7 @@ a.c_link-nav:visited{
         font-size: var(--font-size-headTitle);
         line-height: var(--line-height-headTitle);
         position: absolute;
-        bottom: var(--margin-xlarge);
+        bottom: calc(var(--margin-xlarge) + var(--margin-medium) * 2 + var(--line-height));
         margin-right: var(--margin-xlarge);
     }
 
