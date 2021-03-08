@@ -399,6 +399,7 @@ p.c_block-text-secondary{
     padding: var(--margin-medium);
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
     height: 40vh;
 }
 
@@ -901,6 +902,11 @@ h5.c_block-dropdown-title{
 
 .c_tile-tertiary{
     height: 20vh;
+}
+
+.c_tile-tertiary .c_tile_img-background{
+    height: 100%;
+    margin-left: -25%;
 }
 
 .c_tile_text{
