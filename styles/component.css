@@ -689,7 +689,7 @@ h5.c_block-dropdown-title{
 .c_palmares .c_index-item .s12{
     order: unset;
     margin-left: unset;
-    margin-bottom: var(--line-height);
+    margin-bottom: var(--margin-xsmall);
     margin-top: var(--margin-xxsmall);
 }
 
