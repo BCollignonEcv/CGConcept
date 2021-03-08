@@ -8,7 +8,7 @@
     left: 0;
     width: 100vw;
     z-index: 100;
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
 }
 
 .c_menu li, .c_menu-bottom li{
@@ -35,7 +35,7 @@
 
 .c_menu a{
     font-weight: var(--font-weight-bold);
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
 }
 
 .c_menu-aside{
@@ -145,14 +145,14 @@
 .c_link{
     text-decoration: none;
     display: block;
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
     font-weight: 700;
     transition: padding-left .3s ease;
     cursor: pointer;
 }
 
 .c_link:visited{
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
 }
 
 p > .c_link{
@@ -345,7 +345,7 @@ a.c_link-nav:visited{
 
 .c_block-text p{
     text-transform: none;
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
     font-size: var(--font-size-bigText);
     line-height: var(--line-height-bigText);
     padding-bottom: var(--margin-medium);
@@ -471,7 +471,7 @@ p.c_block-text-secondary{
 /*****************************************/
 
 .c_block-dropdown-title{
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
     width: 100%;
     border-top: 1px solid var(--color-dark-v20);
     font-weight: var(--font-weight-bold);
@@ -746,7 +746,7 @@ h5.c_block-dropdown-title{
     }
     
     .c_index .c_index-item:hover p{
-        color: var(--color-dark-v60);
+        color: var(--color-dark-v80);
         cursor: pointer;
     }
 
@@ -780,7 +780,7 @@ h5.c_block-dropdown-title{
 
     .c_index-item .s12.c_slide-hidden{
         order: unset;
-        color: var(--color-dark-v60);
+        color: var(--color-dark-v80);
         margin: unset;
         display: flex;
     }
@@ -832,7 +832,7 @@ h5.c_block-dropdown-title{
 
 .c_input{
     width: 100%;
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
 }
 
 .c_input-text{
@@ -922,7 +922,7 @@ h5.c_block-dropdown-title{
     height: 100%;
     width: 100%;
     padding: var(--margin-medium);
-    color: var(--color-dark-v60);
+    color: var(--color-dark-v80);
 }
 
 .c_tile_img .c_tile_img-overlay:hover{
