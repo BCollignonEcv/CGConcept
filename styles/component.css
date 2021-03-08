@@ -971,6 +971,9 @@ h5.c_block-dropdown-title{
     padding: var(--margin-medium);
     color: var(--color-dark-v80);
 }
+.c_tile_img .c_tile_img-overlay.white{
+    color: var(--color-dark-v20);
+}
 
 .c_tile_img .c_tile_img-background{
     background-color: white;
