@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, li, a, span, p, input, textarea, *::placeholder, figcaption{
 
 a{
     text-decoration: none;
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
     font-size: var(--font-size);
     line-height: var(--line-height);
 }
@@ -33,7 +33,7 @@ h1{
     font-weight: var(--font-weight-bold);
     text-transform: none;
     padding-left: -2px;
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 h2{
@@ -46,7 +46,7 @@ h2{
 }
 
 .c_presentation h2{
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 .c_palmares h3{
@@ -55,7 +55,7 @@ h2{
 
 h3{
     font-weight: var(--font-weight-bold);
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 .c_palmares h3{
@@ -74,17 +74,17 @@ h5{
 }
 
 p{
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 input, textarea{
     font-weight: var(--font-weight-bold);
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 input::placeholder, textarea::placeholder{
     font-weight: var(--font-weight-bold);
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 figcaption{
@@ -180,7 +180,7 @@ span{
 }
 
 .bg-primary h2{
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 .bg-primary h3{
@@ -188,7 +188,7 @@ span{
 }
 
 .bg-primary h5{
-    color: var(--color-dark-v80);
+    color: var(--color-dark-v60);
 }
 
 .bg-secondary{
