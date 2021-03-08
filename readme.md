@@ -29,7 +29,7 @@ MENU
 FOOTER
 
 <!-- - Ajouter de l'espace entre contact et suivez-nous -->
-    - augmenter en teinte sombre les fonts du footer
+<!-- - augmenter en teinte sombre les fonts du footer -->
 
 ACCEUIL 
 
