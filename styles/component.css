@@ -483,6 +483,10 @@ h5.c_block-dropdown-title{
     padding-bottom: var(--margin-xsmall);
 }
 
+.c_block-dropdown-title ~ p {
+    color: var(--color-dark-v40);
+}
+
 .c_block-dropdown-title span{
     text-align: right;
 }
@@ -529,7 +533,7 @@ h5.c_block-dropdown-title{
 }
 
 .c_scale .c_block-text .c_block-desc{
-    padding-top: var(--margin-medium);
+    display: none;
 }
 
 @media only screen and (min-width: 995px){
@@ -588,6 +592,7 @@ h5.c_block-dropdown-title{
         line-height: var(--line-height-bigText);
         text-transform: none;
         padding-right: var(--margin-small);
+        padding-top: var(--margin-medium);
     }
 
     .c_scale:hover .c_block-text .c_block-title{
@@ -909,6 +914,18 @@ h5.c_block-dropdown-title{
     height: 100%;
 }
 
+.c_tile_img.link{
+    cursor: pointer;
+}
+
+.c_tile_img.link .c_tile_img-background{
+    transition: .3s ease-in-out;
+}
+
+.c_tile_img.link:hover .c_tile_img-background{
+    transform: scale(1.2);
+}
+
 .c_tile-primary{
     height: 70vh;
 }
@@ -945,13 +962,8 @@ h5.c_block-dropdown-title{
     color: var(--color-dark-v80);
 }
 
-.c_tile_img .c_tile_img-overlay:hover{
-    background-color: rgba(30, 30, 30, 0.4);
-    cursor: pointer;
-}
-
 .c_tile_img .c_tile_img-background{
-    background-color: grey;
+    background-color: white;
     height: 100%;
     min-width: 100%;
 }
