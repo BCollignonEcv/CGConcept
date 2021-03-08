@@ -382,6 +382,7 @@ p.c_block-text-secondary{
 
 .c_index-listItem .c_block-tile{
     height: 100%;
+    border-right: none;
 }
 
 .bg-secondary .c_block-title{
@@ -683,7 +684,6 @@ h5.c_block-dropdown-title{
 .c_index .c_index-item .s12{
     order: 4;
     color: var(--color-dark-v40);
-    margin-left: calc(100% / 4);
     margin-top: var(--margin-xxsmall);
 }
 
@@ -733,7 +733,7 @@ h5.c_block-dropdown-title{
 }
 
 .c_index .c_slide .c_slide-hidden.last{
-    padding-bottom: var(--margin-medium);
+    padding-bottom: var(--margin-xsmall);
 }
 
 .c_description .c_slide .c_slide-hidden{

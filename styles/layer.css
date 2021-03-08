@@ -52,6 +52,10 @@
     width: 50%;
 }
 
+.l_col.s8{
+    width: calc((100% / 3) * 2);
+}
+
 .l_col.s9{
     width: 75%;
 }

@@ -72,7 +72,7 @@ function customShow(element){
         if(element.children('.c_slide-hidden' ).css('display') == 'none'){
             element.find('span.c_text-floatRight').text('+');
         }else{
-            element.find('span.c_text-floatRight').text('−');
+            element.find('span.c_text-floatRight').text('–');
         }
     });
 }
@@ -83,7 +83,7 @@ function slide(element){
         if(element.children('.c_slide-hidden' ).is(':hidden')){
             element.find('span.c_text-floatRight').text('+');
         }else{
-            element.find('span.c_text-floatRight').text('−');
+            element.find('span.c_text-floatRight').text('–');
         }
     });
 }
