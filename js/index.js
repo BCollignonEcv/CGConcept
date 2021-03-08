@@ -26,15 +26,15 @@ $(window).scroll(function (event) {
         $('#homeLink').fadeIn();
     }
 
-    $('section').each(function(){
-        if($(this).hasClass('c_description')){
-            if(pos > ($(this).offset().top - $(window).height() * .7)){
-                $(this).find('.c_block-text p').each(() => {
-                    // $(this).find('h2').css({ opacity: 1, marginTop: 0, transition: "margin .5s"});
-                    $(this).find('.c_block-text p').css({ opacity: 1, marginTop: 0, transition: "margin .5s, opacity 1s"});
-                });
-            }
-        }
+    // $('section').each(function(){
+    //     if($(this).hasClass('c_description')){
+    //         if(pos > ($(this).offset().top - $(window).height() * .7)){
+    //             $(this).find('.c_block-text p').each(() => {
+    //                 // $(this).find('h2').css({ opacity: 1, marginTop: 0, transition: "margin .5s"});
+    //                 $(this).find('.c_block-text p').css({ opacity: 1, marginTop: 0, transition: "margin .5s, opacity 1s"});
+    //             });
+    //         }
+    //     }
 
 
             // $(this).find('.c_index-item p').each((index, element) => {
