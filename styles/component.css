@@ -584,7 +584,8 @@ h5.c_block-dropdown-title{
 
     .c_scale .c_block-text p.c_block-desc{
         display: none;
-        font-size: var(--font-size);
+        font-size: var(--font-size-bigText);
+        line-height: var(--line-height-bigText);
         text-transform: none;
         padding-right: var(--margin-small);
     }
