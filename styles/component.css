@@ -209,6 +209,7 @@ a.c_link-nav:visited{
     position: absolute;
     bottom: var(--margin-medium);
     left: var(--margin-medium);
+    padding-right: var(--margin-medium);
 }
 
 .c_page-title{
