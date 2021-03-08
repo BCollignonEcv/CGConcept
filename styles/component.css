@@ -725,8 +725,8 @@ h5.c_block-dropdown-title{
     cursor: pointer;
 }
 
-.c_slide .c_slide-hidden{
-    display: none;
+.c_index .c_slide{
+    cursor: default;
 }
 
 .c_index .c_slide .c_slide-hidden.first{
@@ -798,7 +798,7 @@ h5.c_block-dropdown-title{
 
     .c_palmares .c_index .c_index-item:hover p{
         color: white;
-        cursor: unset;
+        cursor:initial;
     }
 }
 
@@ -831,10 +831,6 @@ h5.c_block-dropdown-title{
     .c_palmares .c_index-item .s12{
         order: unset;
         margin: 0;
-    }
-
-    .c_index .c_slide{
-        cursor: unset; 
     }
 
     .c_index .c_index-listItem .l10 .l2{
