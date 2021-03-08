@@ -286,7 +286,8 @@ a.c_link-nav:visited{
         font-size: var(--font-size-headTitle);
         line-height: var(--line-height-headTitle);
         position: absolute;
-        bottom: var(--margin-medium);
+        bottom: var(--margin-xlarge);
+        margin-right: var(--margin-xlarge);
     }
 
     .c_sect-title-fw.floating{
@@ -307,10 +308,6 @@ a.c_link-nav:visited{
 
     .c_content-s{
         margin-top: initial;
-    }
-
-    .c_site-title{
-        bottom: var(--margin-xlarge);
     }
 
     .c_content-longText{
