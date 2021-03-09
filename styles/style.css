@@ -259,28 +259,6 @@ span{
     background-position: center;
 }
 
-#gridTester{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 200;
-    display: none;
-}
-
-#gridTester.show{
-    display: flex;
-}
-
-#gridTester .l_col{
-    border-left: 1px solid black;
-}
-
-#gridTester .l_col:last-of-type{
-    border-right: 1px solid black;
-}
-
 /*****************************************/
 /************ CUSTOM CLASS ***************/
 /*****************************************/

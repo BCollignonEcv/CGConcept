@@ -1,14 +1,84 @@
-$('#homeLink').hide();
+let pos = $(window).scrollTop();
+const white = "#fff";
+const grey = "#212121";
+let darkPosition;
 
-// $('.c_description h2').css({ opacity: 0, marginTop: "-30px" });
-// $('.c_description .c_block-text p').css({ opacity: 0, marginTop: "-20px" });
-// $('.c_index .c_index-item p').css({ opacity: 0, marginLeft: "-20px" });
+$(function() {
 
-$(window).on('keypress',function(e) {
-    if(e.which == 103) {
-        $('#gridTester').toggleClass('show');
-    }
+    // Header 
+    darkPosition = getPos();
+    changeHeader(pos);
 });
+
+$(window).on('resize orientationchange', function(){
+
+    // Header
+    darkPosition = getPos();
+});
+
+document.addEventListener('scroll', function () {
+
+    // Header
+    pos = $(window).scrollTop();
+    changeHeader(pos);
+});
+
+/****************************************/
+/**************** HEADER ****************/
+/****************************************/
+
+// Get position and height of given elements
+function getPos(){
+    let arrayPos = [];
+    $('.a_hw-l').each(function(){
+        elementPosition = [$(this).offset().top, $(this).offset().top + $(this).height()];
+        arrayPos.push(elementPosition);
+    })
+    if($(window).width() < 995){
+        $('.a_hw-s').each(function(){
+            elementPosition = [$(this).offset().top, $(this).offset().top + $(this).height()];
+            arrayPos.push(elementPosition);
+        })
+    }
+    return arrayPos;
+}
+
+function changeHeader(scrollPosition){
+    isIn = false;
+    darkPosition.forEach(function(item){
+        if(scrollPosition >= item[0] && scrollPosition + 50 < item[1]){
+            isIn = true;
+        }
+    })
+    console.log(isIn);
+    if(isIn){
+        lightHeader();
+    }else{
+        darkHeader();
+    }
+}
+
+function lightHeader(){
+    $('.c_menu a').css({
+        color: white,
+    });
+    $('#menu').css({
+        color: white,
+    });
+}
+
+function darkHeader(){
+    $('.c_menu a').css({
+        color: grey,
+    });
+    $('#menu').css({
+        color: grey,
+    });
+}
+
+/****************************************/
+/**************** SCROLL ****************/
+/****************************************/
 
 $('*[data-scroll]').on('click',function(){
     let element = $(`.${$(this).data('scroll')}`);
@@ -17,32 +87,11 @@ $('*[data-scroll]').on('click',function(){
     }, 500);
 });
 
-$(window).scroll(function (event) {
-    let pos = $(window).scrollTop();
 
-    if(pos === 0){
-        $('#homeLink').hide();
-    }else{
-        $('#homeLink').fadeIn();
-    }
-
-    $('section').each(function(){
-        if($(this).hasClass('c_description')){
-            if(pos > ($(this).offset().top - $(window).height() * .7)){
-                $(this).find('.c_block-text p').each(() => {
-                    // $(this).find('h2').css({ opacity: 1, marginTop: 0, transition: "margin .5s"});
-                    $(this).find('.c_block-text p').css({ opacity: 1, marginTop: 0, transition: "margin .5s, opacity 1s"});
-                });
-            }
-        }
+/****************************************/
+/**************** CUSTOM ****************/
+/****************************************/
 
 
-            // $(this).find('.c_index-item p').each((index, element) => {
-            //     console.log(element);
-            //     element.css({ opacity: 1, marginLeft: "0", transition: "margin .7s"});
-            // })
-        }
-    )
 
-});
 
