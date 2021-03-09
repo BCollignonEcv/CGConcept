@@ -3,6 +3,14 @@ const white = "#fff";
 const grey = "#212121";
 let darkPosition;
 
+// Before Load
+$('.c_block-text p').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
+$('.c_block-title').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
+$('.c_content-longText p').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
+$('.c_index-item').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
+
+
+// DOM LOAD DONE
 $(function() {
 
     // Header 
@@ -28,9 +36,19 @@ $(window).on('resize orientationchange', function(){
 });
 
 document.addEventListener('scroll', function () {
+    pos = $(window).scrollTop();
+
+    // Load
+    $('section').each(function(){
+        if(pos + $(window).height() - $(this).height() / 2 > $(this).offset().top){
+            $(this).find('.c_block-text p').css({'opacity': '1', 'marginTop': '0'});
+            $(this).find('.c_block-title').css({'opacity': '1', 'marginTop': '0'});
+            $(this).find('.c_content-longText p').css({'opacity': '1', 'marginTop': '0'});
+            $(this).find('.c_index-item').css({'opacity': '1', 'marginTop': '0'});
+        }
+    })
 
     // Header
-    pos = $(window).scrollTop();
     changeHeader(pos);
 });
 

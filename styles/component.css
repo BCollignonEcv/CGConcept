@@ -785,6 +785,7 @@ h5.c_block-dropdown-title{
 
     .c_index .c_index-item .s12{
         margin-top: 0;
+        color: var(--color-dark-v80);
     }
 
     .c_index .c_index-listItem:hover p{
