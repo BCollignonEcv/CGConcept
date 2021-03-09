@@ -8,6 +8,17 @@ $(function() {
     // Header 
     darkPosition = getPos();
     changeHeader(pos);
+
+    $('header #menu').click(function(){
+        var menu = $('.c_menu-aside').toggleClass('active');
+        if(menu.hasClass('active')){
+            animateOpeningMenu();
+            darkHeader();
+        }else{
+            animateClosingMenu();
+            changeHeader(pos);
+        }
+    });
 });
 
 $(window).on('resize orientationchange', function(){
@@ -22,6 +33,13 @@ document.addEventListener('scroll', function () {
     pos = $(window).scrollTop();
     changeHeader(pos);
 });
+
+/****************************************/
+/*************** LOADING ****************/
+/****************************************/
+
+
+
 
 /****************************************/
 /**************** HEADER ****************/
@@ -50,7 +68,6 @@ function changeHeader(scrollPosition){
             isIn = true;
         }
     })
-    console.log(isIn);
     if(isIn){
         lightHeader();
     }else{

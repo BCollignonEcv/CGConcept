@@ -1,12 +1,4 @@
 /************ HEADER ************/ 
-$('header #menu').click(function(){
-    var menu = $('.c_menu-aside').toggleClass('active');
-    if(menu.hasClass('active')){
-        animateOpeningMenu();
-    }else{
-        animateClosingMenu();
-    }
-});
 
 function animateOpeningMenu(){
     var menu = $('.c_menu-aside');
