@@ -40,7 +40,7 @@ document.addEventListener('scroll', function () {
 
     // Load
     $('section').each(function(){
-        if(pos + $(window).height() - $(this).height() / 2 > $(this).offset().top){
+        if(pos + $(window).height() / 1.5 > $(this).offset().top){
             $(this).find('.c_block-text p').css({'opacity': '1', 'marginTop': '0'});
             $(this).find('.c_block-title').css({'opacity': '1', 'marginTop': '0'});
             $(this).find('.c_content-longText p').css({'opacity': '1', 'marginTop': '0'});
