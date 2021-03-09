@@ -729,6 +729,10 @@ h5.c_block-dropdown-title{
     cursor: default;
 }
 
+.c_index .c_slide .c_slide-hidden{
+    display: none;
+}
+
 .c_index .c_slide .c_slide-hidden.first{
     padding-top: var(--margin-xsmall);
 }
@@ -816,7 +820,7 @@ h5.c_block-dropdown-title{
         margin-top: var(--margin-medium);
     }
 
-    .c_index-item .s12.c_slide-hidden{
+    .c_index-item .c_slide-hidden{
         order: unset;
         color: var(--color-dark-v80);
         margin: unset;
