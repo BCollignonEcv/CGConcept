@@ -783,6 +783,10 @@ h5.c_block-dropdown-title{
         padding-bottom: unset;
     }
 
+    .c_index .c_index-item .s12{
+        margin-top: 0;
+    }
+
     .c_index .c_index-listItem:hover p{
         color: var(--color-dark-v20);
     }
