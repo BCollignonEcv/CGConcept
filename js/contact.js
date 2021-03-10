@@ -10,15 +10,15 @@ const getFormSubmit = formTag => {
             && checkUserValue($('[name="object"]').val())
             && checkUserValue(!$('[name="message"]').val())
         ){
-            const person = {
-                firstName: $('[name="firstName"]').val(),
-                lastName: $('[name="lastName"]').val(),
-                firstName: $('[name="email"]').val(),
-                firstName: $('[name="object"]').val(),
-                firstName: $('[name="message"]').val()
-            };
 
-            const visitor = Object.create(person);
+            const person = {}
+            let visitor = Object.create(person);
+
+            visitor.firstName = $('[name="firstName"]').val();
+            visitor.lastName = $('[name="lastName"]').val();
+            visitor.email = $('[name="email"]').val();
+            visitor.object = $('[name="object"]').val();
+            visitor.message = $('[name="message"]').val();
 
             if(checkUserValue($('[name="company"]').val())){
                 visitor.company = $('[name="company"]').val();
@@ -65,3 +65,7 @@ function checkUserValue(userInput){
     }
     return true;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    getFormSubmit(document.querySelector('form'));
+});

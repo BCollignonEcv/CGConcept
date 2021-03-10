@@ -1,14 +1,15 @@
 let pos = $(window).scrollTop();
 const white = "#fff";
 const grey = "#212121";
-let darkPosition;
+let darkPosition = getPos();
 
 // Before Load
-$('.c_block-text p').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
-$('.c_block-title').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
-$('.c_content-longText p').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
-$('.c_index-item').css({'opacity': '0', 'marginTop': '-10px', 'transition': '1s ease'});
-
+if(pos === 0){
+    $('.c_block-text p').not('.c_slide-hidden').css({'opacity': '0', 'transition': '1.5s ease'});
+    $('.c_block-title').css({'opacity': '0', 'transition': '1.5s ease'});
+    $('.c_content-longText p').css({'opacity': '0', 'transition': '1.5s ease'});
+    $('.c_index-item').css({'opacity': '0', 'transition': '1.5s ease'});
+}
 
 // DOM LOAD DONE
 $(function() {
@@ -40,11 +41,16 @@ document.addEventListener('scroll', function () {
 
     // Load
     $('section').each(function(){
-        if(pos + $(window).height() / 1.5 > $(this).offset().top){
-            $(this).find('.c_block-text p').css({'opacity': '1', 'marginTop': '0'});
-            $(this).find('.c_block-title').css({'opacity': '1', 'marginTop': '0'});
-            $(this).find('.c_content-longText p').css({'opacity': '1', 'marginTop': '0'});
-            $(this).find('.c_index-item').css({'opacity': '1', 'marginTop': '0'});
+        if(pos + $(window).height() * heightDeviceAdaptation() > $(this).offset().top){
+            $(this).find('.c_block-text p')
+                .not('.c_slide-hidden')
+                .css({'opacity': '1'})
+            $(this).find('.c_block-title')
+                .css({'opacity': '1'});
+            $(this).find('.c_content-longText p')
+                .css({'opacity': '1'});
+            $(this).find('.c_index-item')
+                .css({'opacity': '1'});
         }
     })
 
@@ -127,6 +133,12 @@ $('*[data-scroll]').on('click',function(){
 /**************** CUSTOM ****************/
 /****************************************/
 
-
+function heightDeviceAdaptation(){
+    if($(window).width() < 995){
+        return 0.6;
+    }else{
+        return 0.5;
+    }
+}
 
 
