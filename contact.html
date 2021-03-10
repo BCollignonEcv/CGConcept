@@ -76,40 +76,48 @@ Code : Collignon Baptiste - https://www.collignonbaptiste.com/
                         <a class="c_link" href="https://www.facebook.com/cgconceptandride" target="_blank">Facebook</a>
                         <a class="c_link" href="https://www.instagram.com/cgconceptandride" target="_blank">Instagram</a>
                     </div>
-                    <form class="l_col s12 c_content" action="">
+                    <form class="l_col s12 c_content" id="contactForm" action="">
                         <div class="l_container">
                             <div class="l_col s12 m6 c_streak-top">
-                                <input class=" c_input c_input-text" type="text" name="" id="" placeholder="Nom">
+                                <input class=" c_input c_input-text" type="text" name="lastName" placeholder="Nom" required>
                             </div>
                             <div class="l_col s12 m6 c_streak-top">
-                                <input class="c_input c_input-text" type="text" name="" id="" placeholder="Prénom">
+                                <input class="c_input c_input-text" type="text" name="firstName" placeholder="Prénom" required>
                             </div>
                         </div>
                         <div class="c_streak-top marginEnd">
-                            <input class="c_input c_input-text" type="text" name="" id="" placeholder="Société">
+                            <input class="c_input c_input-text" type="text" name="company" placeholder="Société">
+                        </div>
+                        <div class="l_container">
+                            <div class="l_col s12 m6 c_streak-top">
+                                <input class="c_input c_input-text" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </div>
+                            <div class="l_col s12 m6 c_streak-top">
+                                <input class="c_input c_input-text" type="tel" name="phone"  placeholder="Numéro de téléphone" pattern="^[+]?[0-9]{9,12}$">
+                            </div>
                         </div>
                         <div class="c_streak-top">
-                            <input class="c_input c_input-text" type="tel" name="" id="" placeholder="Numéro de téléphone">
-                        </div>
-                        <div class="c_streak-top">
-                            <input class="c_input c_input-text" type="text" name="" id="" placeholder="Adresse">
+                            <input class="c_input c_input-text" type="text" name="address" placeholder="Adresse">
                         </div>
                         <div class="l_container marginEnd">
                             <div class="l_col s12 m6 c_streak-top">
-                                <input class="c_input c_input-text" type="text" name="" id="" placeholder="Ville">
+                                <input class="c_input c_input-text" type="text" name="city" placeholder="Ville">
                             </div>
                             <div class="l_col s12 m6 c_streak-top">
-                                <input class="c_input c_input-text" type="text" name="" id="" placeholder="Code postal">
+                                <input class="c_input c_input-text" type="text" name="postalCode" placeholder="Code postal">
                             </div>
                         </div>
                         <div class="c_streak-top">
-                            <input class="c_input c_input-text" type="text" name="" id="" placeholder="Object de contact">
+                            <input class="c_input c_input-text" type="text" name="object" placeholder="Object de contact" required>
                         </div>
                         <div class="c_streak-top">
-                            <textarea class="c_input c_input-textarea" name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                            <textarea class="c_input c_input-textarea" name="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
                         </div>
                         <div class="c_streak-top marginEnd">
                             <input class="c_input c_input-submit" type="submit" value="Envoyer">
+                        </div>
+                        <div id="#mail-status">
+
                         </div>
                     </form>
                     <div class="l_col s12 c_content">
@@ -438,6 +446,7 @@ Code : Collignon Baptiste - https://www.collignonbaptiste.com/
   crossorigin="anonymous"></script>
         <script src="js/component.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/contact.js"></script>
     </footer>
 </body>
 </html>
